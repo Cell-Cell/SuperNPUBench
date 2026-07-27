@@ -1,0 +1,143 @@
+family,operator,isa_doc,cpp_surface,signature_kind,kernel_example,evidence,notes
+TLSU,TLOAD,TLOAD.md,TLOAD,tile_from_global,gather/gather_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified across all representative cases
+TLSU,TSTORE,TSTORE.md,TSTORE,global_from_tile,gather/gather_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified across all representative cases
+TLSU,MGATHER,MGATHER.md,MGATHER,tile_from_global_offset,gather/gather_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in FP32 U32-offset gather case
+TLSU,MSCATTER,MSCATTER.md,MSCATTER,global_from_tile_offset,concat/concat_scatter_pto.hpp,ISA|API|KERNEL,Offset tile addresses global memory
+TLSU,MGATHER_MASK,MGATHER_MASK.md,MGATHER_MASK,tile_from_global_offset_mask,-,ISA|API|SOURCE_ONLY,No tracked kernel call found
+TLSU,MSCATTER_MASK,MSCATTER_MASK.md,MSCATTER_MASK,global_from_tile_offset_mask,-,ISA|API|SOURCE_ONLY,No tracked kernel call found
+TLSU,TPREFETCH,TPREFETCH.md,-,global_prefetch,-,ISA_ONLY,ISA page has no same-name public API
+CUBE,ACCCVT,ACCCVT.md,ACCCVT,unary_acc_to_tile,matmul/matmul.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in MASK_FP32 matmul
+CUBE,TMATMUL,TMATMUL.md,TMATMUL,acc_left_right,matmul/matmul_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in MASK_FP32 matmul
+CUBE,TMATMUL_ACC,TMATMUL_ACC.md,TMATMUL_ACC,accumulate_left_right,matmul/matmul_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Disassembles as TMATMUL.ACC
+CUBE,TMATMUL_BIAS,TMATMUL_BIAS.md,TMATMUL_BIAS,acc_left_right_extra,-,ISA|API|SOURCE_ONLY,Bias is non-ACC extra tile
+CUBE,TMATMUL_MX,TMATMUL_MX.md,TMATMUL_MX,acc_left_scale_right_scale,matmul/matmul_mx_pto.hpp,ISA|API|KERNEL,Microscaling variant
+CUBE,TGEMV,TGEMV.md,-,matrix_vector,-,ISA_ONLY,No same-name public API
+CUBE,TGEMV_ACC,TGEMV_ACC.md,-,matrix_vector_accumulate,-,ISA_ONLY,No same-name public API
+CUBE,TGEMV_BIAS,TGEMV_BIAS.md,-,matrix_vector_bias,-,ISA_ONLY,No same-name public API
+CUBE,TGEMV_MX,TGEMV_MX.md,-,matrix_vector_scale,-,ISA_ONLY,No same-name public API
+TEPL0,TADD,TADD.md,TADD,binary_same_shape,reduction/reducesum_rowvec_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in ReduceSum merge path
+TEPL0,TSUB,TSUB.md,TSUB,binary_same_shape,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL,Elementwise subtract
+TEPL0,TMUL,TMUL.md,TMUL,binary_same_shape,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL0,TDIV,TDIV.md,TDIV,binary_same_shape,-,ISA|API|SOURCE_ONLY,Elementwise divide
+TEPL0,TREM,TREM.md,TREM,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Integer remainder in tracked source
+TEPL0,TFMOD,TFMOD.md,TFMOD,binary_same_shape,-,ISA|API|SOURCE_ONLY,Floating remainder profile
+TEPL0,TAND,TAND.md,TAND,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Bitwise and
+TEPL0,TOR,TOR.md,TOR,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Bitwise or
+TEPL0,TXOR,TXOR.md,TXOR,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Bitwise xor
+TEPL0,TSHL,TSHL.md,TSHL,binary_same_shape,-,ISA|API|SOURCE_ONLY,Tile-tile shift left
+TEPL0,TSHR,TSHR.md,TSHR,binary_same_shape,-,ISA|API|SOURCE_ONLY,Tile-tile shift right
+TEPL0,TMAX,TMAX.md,TMAX,binary_same_shape,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL,Elementwise maximum
+TEPL0,TMIN,TMIN.md,TMIN,binary_same_shape,-,ISA|API|SOURCE_ONLY,Elementwise minimum
+TEPL0,TCMP,TCMP.md,TCMP,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Packed predicate semantics are profile-specific
+TEPL0,TPRELU,TPRELU.md,TPRELU,binary_same_shape,-,ISA|API|SOURCE_ONLY,Per-element slope
+TEPL0,TSEL,TSEL.md,TSEL,binary_same_shape,control/hashtable_lookup_simd.hpp,ISA|API|KERNEL,Selection uses current predicate contract
+TEPL0,TABS,TABS.md,TABS,unary_same_shape,-,ISA|API|SOURCE_ONLY,Used by workspace-only quant kernels
+TEPL0,TNOT,TNOT.md,TNOT,unary_same_shape,-,ISA|API|SOURCE_ONLY,Bitwise not
+TEPL0,TNEG,TNEG.md,TNEG,unary_same_shape,-,ISA|API|SOURCE_ONLY,Used by workspace-only SwiGLU kernel
+TEPL0,TEXP,TEXP.md,TEXP,unary_same_shape,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL0,TLOG,TLOG.md,TLOG,unary_same_shape,-,ISA|API|SOURCE_ONLY,Logarithm
+TEPL0,TRECIP,TRECIP.md,TRECIP,unary_same_shape,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL0,TSQRT,TSQRT.md,TSQRT,unary_same_shape,-,ISA|API|SOURCE_ONLY,Square root
+TEPL0,TRSQRT,TRSQRT.md,TRSQRT,unary_same_shape,-,ISA|API|SOURCE_ONLY,Reciprocal square root
+TEPL0,TRELU,TRELU.md,TRELU,unary_same_shape,-,ISA|API|SOURCE_ONLY,ReLU
+TEPL0,TADDC,TADDC.md,TADDC,ternary_same_shape,-,ISA|API|SOURCE_ONLY,Three-input add profile
+TEPL0,TSUBC,TSUBC.md,TSUBC,ternary_same_shape,-,ISA|API|SOURCE_ONLY,Three-input subtract profile
+TEPL0,TCVT,TCVT.md,TCVT,unary_cross_dtype,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified BF16 to FP32 and FP32 to BF16
+TEPL0,TFMA,TFMA.md,TFMA,ternary_same_shape,-,ISA|API|SOURCE_ONLY,Used by workspace-only MoE kernel
+TEPL1,TADDS,TADDS.md,TADDS,tile_scalar,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified scalar through B.IOR in GELU
+TEPL1,TSUBS,TSUBS.md,TSUBS,tile_scalar,-,ISA|API|SOURCE_ONLY,Scalar subtract
+TEPL1,TMULS,TMULS.md,TMULS,tile_scalar,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL1,TDIVS,TDIVS.md,TDIVS,tile_scalar,transpose/transpose_pto.hpp,ISA|API|KERNEL,Scalar divide
+TEPL1,TREMS,TREMS.md,TREMS,tile_scalar,broadcast/broadcast_pto.hpp,ISA|API|KERNEL,Scalar remainder
+TEPL1,TFMODS,TFMODS.md,TFMODS,tile_scalar,-,ISA|API|SOURCE_ONLY,Floating scalar remainder
+TEPL1,TANDS,TANDS.md,TANDS,tile_scalar,sort/topk_pto.hpp,ISA|API|KERNEL,Scalar bitwise and
+TEPL1,TORS,TORS.md,TORS,tile_scalar,-,ISA|API|SOURCE_ONLY,Scalar bitwise or
+TEPL1,TXORS,TXORS.md,TXORS,tile_scalar,-,ISA|API|SOURCE_ONLY,Scalar bitwise xor
+TEPL1,TSHLS,TSHLS.md,TSHLS,tile_scalar,-,ISA|API|SOURCE_ONLY,Used by workspace-only MoE kernel
+TEPL1,TSHRS,TSHRS.md,TSHRS,tile_scalar,sort/topk_pto.hpp,ISA|API|KERNEL,Scalar shift right
+TEPL1,TMAXS,TMAXS.md,TMAXS,tile_scalar,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL1,TMINS,TMINS.md,TMINS,tile_scalar,element_wise/gelu_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in BF16 GELU
+TEPL1,TCMPS,TCMPS.md,TCMPS,tile_scalar,-,ISA|API|SOURCE_ONLY,Used by workspace-only MoE kernels
+TEPL1,TLRELU,TLRELU.md,TLRELU,tile_scalar,-,ISA|API|SOURCE_ONLY,Leaky ReLU
+TEPL1,TAXPY,TAXPY.md,TAXPY,tile_scalar,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL1,TADDSC,TADDSC.md,TADDSC,tile_scalar_tile,-,ISA|API|SOURCE_ONLY,Fused scalar and tile profile
+TEPL1,TSUBSC,TSUBSC.md,TSUBSC,tile_scalar_tile,-,ISA|API|SOURCE_ONLY,Fused scalar and tile profile
+TEPL1,TSELS,TSELS.md,TSELS,tile_scalar_tile,-,ISA|API|SOURCE_ONLY,Scalar selection profile
+TEPL1,TEXPANDS,TEXPANDS.md,TEXPANDS,scalar_to_tile,sort/topk_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in ReduceSum and matmul initialization
+TEPL2_ROW,TROWSUM,TROWSUM.md,TROWSUM,reduce_unary,reduction/reducesum_rowvec_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified in int32 ReduceSum
+TEPL2_ROW,TROWMAX,TROWMAX.md,TROWMAX,reduce_unary,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL,Reduce maximum across columns
+TEPL2_ROW,TROWMIN,TROWMIN.md,TROWMIN,reduce_unary,-,ISA|API|SOURCE_ONLY,Reduce minimum across columns
+TEPL2_ROW,TROWPROD,TROWPROD.md,TROWPROD,reduce_unary,reduction/reduceprod_rowvec_pto.hpp,ISA|API|KERNEL,Reduce product across columns
+TEPL2_ROW,TROWEXPAND,TROWEXPAND.md,TROWEXPAND,expand_unary,broadcast/broadcast_vec_07_pto.hpp,ISA|API|KERNEL,Expand per-row values
+TEPL2_ROW,TROWARGMAX,TROWARGMAX.md,TROWARGMAX,reduce_index,-,ISA|API|SOURCE_ONLY,Used by workspace-only MoE kernel
+TEPL2_ROW,TROWARGMIN,TROWARGMIN.md,TROWARGMIN,reduce_index,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL2_ROW,TROWEXPANDADD,TROWEXPANDADD.md,TROWEXPANDADD,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_ROW,TROWEXPANDSUB,TROWEXPANDSUB.md,TROWEXPANDSUB,broadcast_binary,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL|GAP,Source and installed dst dtype checks differ
+TEPL2_ROW,TROWEXPANDMUL,TROWEXPANDMUL.md,TROWEXPANDMUL,broadcast_binary,fa/fa_2d_unroll_pto.hpp,ISA|API|KERNEL|COMPILED|DISS|GAP,Installed header verified but source dtype check differs
+TEPL2_ROW,TROWEXPANDDIV,TROWEXPANDDIV.md,TROWEXPANDDIV,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_ROW,TROWEXPANDMAX,TROWEXPANDMAX.md,TROWEXPANDMAX,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_ROW,TROWEXPANDMIN,TROWEXPANDMIN.md,TROWEXPANDMIN,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_ROW,TROWEXPANDEXPDIF,TROWEXPANDEXPDIF.md,TROWEXPANDEXPDIF,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLSUM,TCOLSUM.md,TCOLSUM,reduce_unary,reduction/reducesum_colvec_pto.hpp,ISA|API|KERNEL,Reduce across rows
+TEPL2_COL,TCOLMAX,TCOLMAX.md,TCOLMAX,reduce_unary,reduction/reducemax_colvec_pto.hpp,ISA|API|KERNEL,Reduce maximum across rows
+TEPL2_COL,TCOLMIN,TCOLMIN.md,TCOLMIN,reduce_unary,-,ISA|API|SOURCE_ONLY,Reduce minimum across rows
+TEPL2_COL,TCOLPROD,TCOLPROD.md,TCOLPROD,reduce_unary,reduction/reduceprod_colvec_pto.hpp,ISA|API|KERNEL,Reduce product across rows
+TEPL2_COL,TCOLEXPAND,TCOLEXPAND.md,TCOLEXPAND,expand_unary,-,ISA|API|SOURCE_ONLY,Column expansion
+TEPL2_COL,TCOLARGMAX,TCOLARGMAX.md,TCOLARGMAX,reduce_index,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL2_COL,TCOLARGMIN,TCOLARGMIN.md,TCOLARGMIN,reduce_index,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL2_COL,TCOLEXPANDADD,TCOLEXPANDADD.md,TCOLEXPANDADD,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDSUB,TCOLEXPANDSUB.md,TCOLEXPANDSUB,broadcast_binary,fa/fa_hif4_pto.hpp,ISA|API|KERNEL|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDMUL,TCOLEXPANDMUL.md,TCOLEXPANDMUL,broadcast_binary,fa/fa_hif4_pto.hpp,ISA|API|KERNEL|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDDIV,TCOLEXPANDDIV.md,TCOLEXPANDDIV,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDMAX,TCOLEXPANDMAX.md,TCOLEXPANDMAX,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDMIN,TCOLEXPANDMIN.md,TCOLEXPANDMIN,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL2_COL,TCOLEXPANDEXPDIF,TCOLEXPANDEXPDIF.md,TCOLEXPANDEXPDIF,broadcast_binary,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL3,TCONCAT,TCONCAT.md,TCONCAT,binary_cross_shape,-,ISA|API|SOURCE_ONLY|GAP,Source and installed dst dtype checks differ
+TEPL3,TGATHERB,TGATHERB.md,TGATHERB,global_byte_gather,-,ISA|API|SOURCE_ONLY,Different contract from MGATHER
+TEPL3,TEXTRACT,TEXTRACT.md,TEXTRACT,unary_with_offsets,-,ISA|API|SOURCE_ONLY,Only workspace-only kernel call found
+TEPL3,TINSERT,TINSERT.md,TINSERT,unary_with_offsets,broadcast/broadcast_vec_019_pto.hpp,ISA|API|KERNEL,Sub-tile insertion
+TEPL3,TIMG2COL,TIMG2COL.md,TIMG2COL,unary_cross_shape,-,ISA|API|SOURCE_ONLY,Image-to-column profile
+TEPL3,TFILLPAD,TFILLPAD.md,TFILLPAD,unary_cross_shape,-,ISA|API|SOURCE_ONLY,Copy valid region and fill pad
+TEPL3,TCI,TCI.md,TCI,scalar_to_sequence,transpose/transpose_pto.hpp,ISA|API|KERNEL,Continuous integer sequence
+TEPL3,TTRI,TTRI.md,TTRI,nullary_to_tile,-,ISA|API|SOURCE_ONLY,Triangular mask
+TEPL3,TRANDOM,TRANDOM.md,TRANDOM,scalar_to_tile,-,ISA|API|SOURCE_ONLY,Profile-defined random sequence
+TEPL3,TQUANT,TQUANT.md,TQUANT,unary_cross_dtype,fa/fa_hif4.hpp,ISA|API|KERNEL,Profile-defined quantization
+TEPL3,TDEQUANT,TDEQUANT.md,TDEQUANT,unary_cross_dtype,-,ISA|API|SOURCE_ONLY,Profile-defined dequantization
+TEPL3,TSORT32,TSORT32.md,TSORT32,unary_cross_shape,-,ISA|API|SOURCE_ONLY,Used by workspace-only routing kernel
+TEPL3,TMRGSORT,TMRGSORT.md,TMRGSORT,binary_cross_shape,-,ISA|API|SOURCE_ONLY,Used by workspace-only routing kernel
+TEPL3,TTRANS,TTRANS.md,TTRANS,unary_transpose,transpose/transpose_pto.hpp,ISA|API|KERNEL|COMPILED|DISS,Verified with one-layer 16x16 FP32 probe
+TEPL3,TGATHER,TGATHER.md,TGATHER,tile_indexed_read,-,ISA|API|SOURCE_ONLY,Tile-local indexed operation
+TEPL3,TSCATTER,TSCATTER.md,TSCATTER,tile_indexed_write,-,ISA|API|SOURCE_ONLY,Tile-local indexed operation
+TEPL3,TPARTADD,TPARTADD.md,TPARTADD,binary_partial,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL3,TPARTMUL,TPARTMUL.md,TPARTMUL,binary_partial,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL3,TPARTMAX,TPARTMAX.md,TPARTMAX,binary_partial,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL3,TPARTMIN,TPARTMIN.md,TPARTMIN,binary_partial,-,ISA|API|SOURCE_ONLY,DavinciOO extension
+TEPL3,THISTOGRAM,THISTOGRAM.md,THISTOGRAM,two_tile_with_byte_id,-,ISA|API|SOURCE_ONLY,Used by workspace-only MoE kernel
+TEPL3,TMOV,TMOV.md,-,tile_move,-,ISA_ONLY|DISS,Compiler-generated TMOV observed in ReduceSum and matmul
+API_HELPER,ACCSCALE_T,-,ACCSCALE_T,acc_scalar,-,API_ONLY,No independent same-name ISA page
+API_HELPER,ACCSCALE_NZ2DN,-,ACCSCALE_NZ2DN,acc_scalar_layout,-,API_ONLY,No independent same-name ISA page
+API_HELPER,ACCCVT_RMAX_SCALE_NZ2DN,-,ACCCVT_RMAX_SCALE_NZ2DN,multi_output_fused,-,API_ONLY,No independent same-name ISA page
+API_HELPER,TMAX_T,-,TMAX_T,binary_same_shape,-,API_ONLY,Fused or template helper
+API_HELPER,TSUB_EXP_EXPAND_T,-,TSUB_EXP_EXPAND_T,binary_fused,-,API_ONLY,Fused or template helper
+API_HELPER,TMUL_ADD_ROWSUM_T,-,TMUL_ADD_ROWSUM_T,ternary_fused,-,API_ONLY,Fused or template helper
+API_HELPER,TADD_MUL_EXPAND_T,-,TADD_MUL_EXPAND_T,ternary_fused,-,API_ONLY,Fused or template helper
+API_HELPER,TCVT_T,-,TCVT_T,unary_cross_dtype,-,API_ONLY,Inline template helper
+API_HELPER,TMOV_DN2NZ_DYN,-,TMOV_DN2NZ_DYN,unary_layout_dynamic,-,API_ONLY,Specialized layout helper
+API_HELPER,TLOAD2_ND2NZ,-,TLOAD2_ND2NZ,multi_output_load,-,API_ONLY,Two-output load helper
+API_HELPER,TLOAD2_ND2ZN,-,TLOAD2_ND2ZN,multi_output_load,-,API_ONLY,Two-output load helper
+API_HELPER,TLOAD2_DN2ZN,-,TLOAD2_DN2ZN,multi_output_load,-,API_ONLY,Two-output load helper
+API_HELPER,TLOAD4_ND2NZ,-,TLOAD4_ND2NZ,multi_output_load,-,API_ONLY,Four-output load helper
+API_HELPER,TLOAD4_ND2ZN,-,TLOAD4_ND2ZN,multi_output_load,-,API_ONLY,Four-output load helper
+API_HELPER,TLOAD4_DN2ZN,-,TLOAD4_DN2ZN,multi_output_load,-,API_ONLY,Four-output load helper
+API_HELPER,TSTORE2_DN2DN,-,TSTORE2_DN2DN,multi_input_store,-,API_ONLY,Two-input store helper
+COMPAT_ALIAS,TCOPYIN,-,TCOPYIN,tile_from_global,broadcast/broadcast_vec_019_pto.hpp,ALIAS|KERNEL,Generic wrapper selects backend implementation
+COMPAT_ALIAS,TCOPYOUT,-,TCOPYOUT,global_from_tile,broadcast/broadcast_vec_019_pto.hpp,ALIAS|KERNEL,Generic wrapper selects backend implementation
+COMPAT_ALIAS,TCOPY,-,TCOPY,tile_copy,-,ALIAS,Generic wrapper
+COMPAT_ALIAS,TCAST,-,TCAST,unary_cross_dtype,-,ALIAS,Wraps TCAST_Impl rather than one-layer TCVT symbol
+COMPAT_ALIAS,TRESHAPE,-,TRESHAPE,unary_cross_shape,reduction/reducemax_colvec_unalign_120_8_pto.hpp,ALIAS|GAP|KERNEL,DavinciOO intrinsic inventory lists TRESHAPE as unmapped
+COMPAT_ALIAS,MATMUL,-,MATMUL,acc_left_right,matmul/matmul_mx.hpp,ALIAS|KERNEL,Generic wrapper around MATMUL_Impl
+COMPAT_ALIAS,MATMACC,-,MATMACC,accumulate_left_right,matmul/matmul_mx.hpp,ALIAS|KERNEL,Generic wrapper around MATMACC_Impl
+COMPAT_ALIAS,MATMULMX,-,MATMULMX,acc_left_scale_right_scale,matmul/matmul_mx.hpp,ALIAS|KERNEL,Generic microscaling wrapper
+COMPAT_ALIAS,MATMULMXB,-,MATMULMXB,acc_left_right_scale,-,ALIAS,Only B scale
+COMPAT_ALIAS,MATMACCMX,-,MATMACCMX,accumulate_scaled,matmul/matmul_mx.hpp,ALIAS|KERNEL,Generic microscaling accumulate wrapper
+COMPAT_ALIAS,MATMACCMXB,-,MATMACCMXB,accumulate_right_scale,-,ALIAS,Only B scale accumulate

@@ -4,6 +4,15 @@ Header-only operator implementations, organized by function. All operators use
 the PTO tile-programming paradigm via `<common/pto_tileop.hpp>` and C++ templates
 for type/dimension parameterization.
 
+## Programming Guide
+
+- [PTO 一层算子编程手册（中文）](OPERATOR_PROGRAMMING_GUIDE_zh.md) — from
+  `Tile`/`global_tensor` basics through operator decomposition, tail handling,
+  Linx compilation, and disassembly inspection.
+- [ISA → C++ API → kernel coverage matrix](OPERATOR_COVERAGE_MATRIX.csv) —
+  machine-readable status for the DavinciOO intrinsic, Linx-TileOP-API, and
+  SuperNPUBench kernel layers.
+
 ## Operator List
 
 > **DeepSeek 迁移算子**：`deepseek/` 子目录收录从 TileKernels（TileLang DSL）迁移的 19 个
@@ -81,5 +90,5 @@ matmul_mask<float, M, N, K, tM, tN, tK>(dst, src0, src1);
 - Prefer vectorized variants (`vec`/`vector`) where available.
 
 ## See Also
-- [Top-level README](../../README.md)
+- [Top-level README](../../../README.md)
 - [Test suites](../test/kernel/README.md)
