@@ -4,7 +4,7 @@
 
 CATEGORY=${1:-all}
 
-compile_cube()   { echo ""; echo ">>> cube (CUBE)";       (cd cube   && bash compile.all); }
+compile_cube()   { echo ""; echo ">>> matrix (TMA/CUBE direct)"; (cd cube && bash compile.all); }
 compile_vector() { echo ""; echo ">>> vector (TEPL)";     (cd vector && bash compile.all); }
 compile_memory() { echo ""; echo ">>> memory (TLSU)";     (cd memory && bash compile.all); }
 compile_scalar() { echo ""; echo ">>> scalar (GPR ALU)";  (cd scalar && bash compile.all); }

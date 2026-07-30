@@ -3,8 +3,8 @@
 #
 # Emits one .cpp per (opcode x dtype x tile-size) case plus a compile.all list
 # for each family (cube / vector / memory). Intrinsic naming follows the
-# DavinciOO/PTO reference (OPERATOR_REFERENCE.md); sources are structural and
-# may not compile until pto_tileop.hpp aligns to these names.
+# PTO 0.57.1 reference; sources are structural and may not compile until
+# pto_tileop.hpp aligns to these names.
 #
 # Usage: python3 gen_cases.py
 from __future__ import annotations
@@ -38,11 +38,11 @@ V = []  # noqa
 M16 = (16, 16)
 
 # mode 0 tile-tile binary arithmetic/bitwise
-for op in ["TADD", "TSUB", "TMUL", "TDIV", "TREm".replace("REm", "REM"), "TFMOD",
+for op in ["TADD", "TSUB", "TMUL", "TDIV", "TREm".replace("REm", "REM"),
            "TAND", "TOR", "TXOR", "TSHL", "TSHR", "TMAX", "TMIN", "TCMP", "TPRELU"]:
     if op in ("TAND", "TOR", "TXOR", "TSHL", "TSHR"):
         dt = ("i16", "i32")
-    elif op in ("TREM", "TFMOD"):
+    elif op == "TREM":
         dt = ("fp16", "fp32", "i32")  # re-test full dtype set
     elif op == "TCMP":
         dt = ("fp16", "fp32", "i32")
@@ -68,7 +68,7 @@ for op, dt in [
     V.append(Case(op, "unary", dt, M16))
 
 # mode 0 ternary
-for op in ["TADDC", "TSUBC", "TSEL"]:
+for op in ["TSEL"]:
     V.append(Case(op, "ternary", ("fp16", "fp32"), M16))
 
 # mode 0 partial-valid
@@ -77,13 +77,13 @@ for op in ["TPARTADD", "TPARTMUL", "TPARTMAX", "TPARTMIN"]:
 
 # mode 1 tile-scalar (1 tile + scalar)
 # tile-scalar ops only support float dtypes on current toolchain
-for op in ["TADDS", "TSUBS", "TMULS", "TDIVS", "TREMS", "TFMODS",
+for op in ["TADDS", "TSUBS", "TMULS", "TDIVS", "TREMS",
            "TANDS", "TORS", "TXORS", "TSHLS", "TSHRS",
-           "TMAXS", "TMINS", "TCMPS", "TLRELU", "TAXPY"]:
+           "TMAXS", "TMINS", "TCMPS", "TAXPY"]:
     V.append(Case(op, "scalar", ("fp16", "f32"), M16))
 
 # mode 1 tile-scalar fused (2 tile + scalar)
-for op in ["TADDSC", "TSUBSC", "TSELS"]:
+for op in ["TSELS"]:
     V.append(Case(op, "scalar3", ("fp16", "fp32"), M16))
 
 # mode 1 scalar broadcast
@@ -123,8 +123,6 @@ VECTOR_SKIP = {
     # need fractal/NZ layout (32-byte align) — plain RowMajor Mx1/Nx1 output fails:
     "TROWMAX", "TROWMIN", "TROWPROD", "TROWSUM", "TROWARGMAX", "TROWARGMIN",
     "TCOLSUM", "TCOLMAX", "TCOLMIN", "TCOLPROD", "TCOLARGMAX", "TCOLARGMIN",
-    # toolchain inline-asm syntax bug ("unknown token in expression"):
-    "TADDC", "TSUBC",
     # signature mismatch (PTO arity != bench template); TODO align:
     "TSEL", "TGATHERB",
 }
@@ -148,9 +146,9 @@ for op, kind, dt, sz in [
     ME.append(Case(op, kind, dt, sz))
 
 
-# ============ cube (CUBE) cases ============
-# Tile allocation must be <= 8KB per active profile (imm4=3..9). Square tile
-# constraint: S^2 * sizeof(dtype) <= 8192  =>  fp16/i8: S<=64..90, fp32: S<=45.
+# ============ matrix (TMA/CUBE direct operations) cases ============
+# These benchmark shapes intentionally keep each input at or below 8 KiB;
+# this is a workload choice, not the architectural 256 KiB-per-PE capacity.
 # TGEMV* are not yet exposed by the toolchain; only TMATMUL* + ACCCVT land.
 C = []
 
@@ -281,8 +279,8 @@ int main() {{
     elif c.kind == "scalar":
         body = f"    {ct} s = ({ct})0.5;\n    bench_scalar<{ct},M,N>(c,a,s,[](auto& dst,auto& s0,auto& sc){{ {op}(dst,s0,sc); }});\n"
     elif c.kind == "scalar3":
-        # TADDSC/TSUBSC/TSELS signature is (dst, src0, scalar, src1)
-        call = f"{op}(dst,s0,sc,s1)" if c.op in ("TADDSC", "TSUBSC", "TSELS") else f"{op}(dst,s0,s1,sc)"
+        # TSELS signature is (dst, src0, scalar, src1).
+        call = f"{op}(dst,s0,sc,s1)" if c.op == "TSELS" else f"{op}(dst,s0,s1,sc)"
         body = f"    {ct} s = ({ct})0.5;\n    bench_scalar3<{ct},M,N>(c,a,b,s,[](auto& dst,auto& s0,auto& s1,auto& sc){{ {call}; }});\n"
     elif c.kind == "scalarbcast":
         body = f"    {ct} s = ({ct})0.5;\n    bench_scalar_bcast<{ct},M,N>(c,s,[](auto& dst,auto& sc){{ {op}(dst,sc); }});\n"

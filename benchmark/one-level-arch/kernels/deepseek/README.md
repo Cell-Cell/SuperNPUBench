@@ -29,6 +29,6 @@ NVIDIA SM90/SM100）迁移到 SuperNPUBench one-level-arch（PTO Tile ISA）的�
 ## 重要说明
 
 - 工具链实际暴露的指令集**窄于** Linx-TileOP-API 文档全集。不可用指令（如 `TROWARGMAX`/
-  `THISTOGRAM`/`TFMA`/`TABS`/`TRSQRT`/`TROWEXPANDDIV`）已用可用指令模拟，详见各 `.hpp`
+  `THISTOGRAM`/`TABS`/`TRSQRT`/`TROWEXPANDDIV`）已用可用指令模拟，详见各 `.hpp`
   头部注释与 `TileKernels迁移说明.md` §七"核心迁移模式"。
 - 全部算子 tile 版（非标量回退）。

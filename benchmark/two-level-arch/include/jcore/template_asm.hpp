@@ -6,8 +6,8 @@
 template <is_tile_data_v tile_shape_out, is_tile_data_v tile_shape_in>
 void ACCSCALE_T(tile_shape_out &dst, tile_shape_in &src, typename tile_shape_in::DType s) {
   asm volatile(
-    "BSTART.CUBE ACCCVT, %c1\n"
-    "B.DATR NZ2ND.normal, %c1, Null\n"
+    "BSTART.ACCCVT %c1\n"
+    "B.DATR NZ2ND, %c1, ZERO, cmode0, rmode0\n"
     "B.IOT [], last, ->%0<%c2>\n"
     "B.IOR [%3],[]\n"
     "C.B.DIMI %c4, ->lb0\n"
@@ -24,8 +24,8 @@ void ACCSCALE_T(tile_shape_out &dst, tile_shape_in &src, typename tile_shape_in:
 template <is_tile_data_v tile_shape_out, is_tile_data_v tile_shape_in>
 void ACCSCALE_NZ2DN(tile_shape_out &dst, tile_shape_in &src, typename tile_shape_in::DType s) {
   asm volatile(
-    "BSTART.CUBE ACCCVT, %c1\n"
-    "B.DATR NZ2DN.normal, %c1, Null\n"
+    "BSTART.ACCCVT %c1\n"
+    "B.DATR NZ2DN, %c1, ZERO, cmode0, rmode0\n"
     "B.IOT [], last, ->%0<%c2>\n"
     "B.IOR [%3],[]\n"
     "C.B.DIMI %c4, ->lb0\n"
@@ -42,8 +42,8 @@ void ACCSCALE_NZ2DN(tile_shape_out &dst, tile_shape_in &src, typename tile_shape
 template <is_tile_data_v tile_shape_max, is_tile_data_v tile_shape_out, is_tile_data_v tile_shape_in>
 void ACCCVT_RMAX_SCALE_NZ2DN(tile_shape_max &row_max, tile_shape_out &dst, tile_shape_in &src, typename tile_shape_in::DType s) {
   asm volatile(
-    "BSTART.CUBE ACCCVT, %c[__pto_SrcType]\n"
-    "B.DATR NZ2DN.normal, %c[__pto_DstType], Null\n"
+    "BSTART.ACCCVT %c[__pto_SrcType]\n"
+    "B.DATR NZ2DN, %c[__pto_DstType], ZERO, cmode0, rmode0\n"
     "B.IOT [], ->%[__pto_dout]<%c[__pto_DstTileSize]>\n"
     "B.IOT [], last, ->%[__pto_rmax]<%c[__pto_RmaxTileSize]>\n"
     "B.IOR [%[__pto_scale]],[]\n"

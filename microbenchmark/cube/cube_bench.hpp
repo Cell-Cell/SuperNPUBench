@@ -1,12 +1,12 @@
 #ifndef CUBE_BENCH_HPP
 #define CUBE_BENCH_HPP
 
-// CUBE matrix micro-bench templates.
+// Named TMA/CUBE direct-operation micro-bench templates.
 // Intrinsic naming follows DavinciOO/PTO (OPERATOR_REFERENCE.md §8):
 //   TMATMUL / TMATMUL_ACC / TMATMUL_BIAS / TMATMUL_MX
 //   TGEMV  / TGEMV_ACC  / TGEMV_BIAS  / TGEMV_MX
 //   ACCCVT  (ACC -> ordinary Tile export)
-// ACC destination follows the CUBE/ACC contract; export via ACCCVT.
+// ACC is implicit for matrix operations and is exported via ACCCVT.
 
 #include <common/pto_tileop.hpp>
 #include <cstdint>

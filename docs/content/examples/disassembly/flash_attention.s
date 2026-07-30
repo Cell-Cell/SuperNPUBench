@@ -5,7 +5,7 @@ BSTART.TLOAD    INT32
 B.DIM           a5, 0, ->lb0
 B.DIM           a5, 0, ->lb1
 B.DIM           a5, 0, ->lb2
-B.ARG           NORM.normal
+B.DATR          normal, INT32, ZERO, cmode0, rmode0
 B.IOR           [a1,a4],[]
 B.IOT           last, ->t<4KB>
 
@@ -13,7 +13,7 @@ BSTART.TLOAD    INT32
 B.DIM           a5, 0, ->lb0
 B.DIM           a5, 0, ->lb1
 B.DIM           a5, 0, ->lb2
-B.ARG           NORM.normal
+B.DATR          normal, INT32, ZERO, cmode0, rmode0
 B.IOR           [a2,a4],[]
 C.B.IOS         S#12
 
@@ -31,7 +31,7 @@ BSTART.TLOAD    INT32
 B.DIM           a5, 0, ->lb0
 B.DIM           a5, 0, ->lb1
 B.DIM           a5, 0, ->lb2
-B.ARG           NORM.normal
+B.DATR          normal, INT32, ZERO, cmode0, rmode0
 B.IOR           [a3,a4],[]
 C.B.IOS         S#13
 
@@ -49,6 +49,6 @@ BSTART.TSTORE   INT32
 B.DIM           a5, 0, ->lb0
 B.DIM           a5, 0, ->lb1
 B.DIM           a5, 0, ->lb2
-B.ARG           NORM.normal
+B.DATR          normal, INT32, ZERO, cmode0, rmode0
 B.IOR           [a0,a4],[]
 B.IOT           m#1, last, ->m<4KB>

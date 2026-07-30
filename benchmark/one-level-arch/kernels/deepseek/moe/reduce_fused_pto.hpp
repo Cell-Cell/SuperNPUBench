@@ -8,7 +8,7 @@
 // 【源端】TileKernels/tile_kernels/moe/reduce_fused_kernel.py
 //
 // 【迁移映射】
-//   TFMA 工具链未提供 → TMUL(x*weight) + TADD(累加)（融合乘加拆两步）
+//   加权累加使用 TMUL(x*weight) + TADD(accumulate) 两步完成
 //   acc 初值清零 → TEXPANDS(0)
 //   bf16→fp32 累加 → TCVT 先升精度（避免低精度累加误差）
 //   T.copy → TLOAD / TSTORE
@@ -56,7 +56,7 @@ void reduce_fused(DTypeIn *x, float *topk_weights,
                     TLOAD(xq, gx);                       // 取 pos 行的 tile
                     TCVT(xf, xq);                         // → fp32
                     TMULS(wf, xf, w);                     // x * weight
-                    TADD(acc, acc, wf);                   // 累加（替代 TFMA）
+                    TADD(acc, acc, wf);                   // 累加
                 }
             }
             TCVT(oq, acc);                                // → 输出 dtype

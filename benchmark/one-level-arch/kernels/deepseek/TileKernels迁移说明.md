@@ -29,7 +29,7 @@
 | 3 | `moe/topk_gate_pto.hpp` | `topk_gate_kernel.py` | top-k 专家选择 | `TROWMAX`+`TROWEXPANDSUB`+`TCMP`+逆索引`TSEL`+`TROWEXPAND`（TROWARGMAX 未提供→模拟） |
 | 3 | `moe/group_count_aux_fi_pto.hpp` | `group_count`/`aux_fi` | 负载均衡统计 | `TEXPANDS`+`TCMP`+`TSEL`+`TROWSUM`+`TINSERT` 直方图tile（THISTOGRAM 未提供→模拟）+`TCVT`/`TMULS` |
 | 4 | `moe/expand_to_fused_pto.hpp` | `expand_to_fused_kernel.py` | token 扩展到 fused 布局 | `TLOAD`+`TSTORE`(pos 偏移)+`TEXPANDS` 清零 |
-| 4 | `moe/reduce_fused_pto.hpp` | `reduce_fused_kernel.py` | 加权归约回 token 级 | `TMULS`+`TADD`（TFMA 未提供→拆乘加）+`TCVT` |
+| 4 | `moe/reduce_fused_pto.hpp` | `reduce_fused_kernel.py` | 加权归约回 token 级 | `TMULS`+`TADD` 两步加权累加 + `TCVT` |
 | 4 | `moe/inplace_unique_group_indices_pto.hpp` | `inplace_unique_group_indices_kernel.py` | 组索引原地去重 | `TEXTRACT`+`TCMP`+`TSEL`+`TINSERT` pairwise（位图需 cumsum→改 O(k²)） |
 | 4 | `moe/mask_indices_by_tp_pto.hpp` | `mask_indices_by_tp_kernel.py` | 按 TP rank 屏蔽索引 | `TDIVS`/`TREMS`/`TSUBS`+`TEXPANDS`+`TCMP`+`TAND`(符号位)+`TSEL`（TCMPS 未提供→广播+TCMP） |
 | 4 | `moe/get_fused_mapping_pto.hpp` | `get_fused_mapping_kernel.py` | token-topk↔expert-major 映射 | 直方图 `TCMP`+`TSEL`+`TROWSUM` + `TEXPANDS` 区间填充；位置映射需 scan（无→标量 cursor） |
@@ -130,7 +130,7 @@ aux_fi 加 `TCVT(int→fp32)`+`TMULS(*N/(T*K))`。
 ### 5.2 reduce_fused（加权归约回 token 级）
 **源端**：`moe/reduce_fused_kernel.py` | **目标**：`moe/reduce_fused_pto.hpp`
 **功能**：`out[token]=Σ_k weight[token,k]*x[pos]`。
-**如何迁移**：`TFMA` 工具链未提供 → `TMULS(x,weight)`+`TADD(累加)`（融合乘加拆两步）。`TCVT` 升精度累加，`TEXPANDS(0)` 初始化 acc。
+**如何迁移**：使用 `TMULS(x,weight)`+`TADD(累加)` 两步完成加权累加。`TCVT` 升精度累加，`TEXPANDS(0)` 初始化 acc。
 
 ### 5.3 inplace_unique_group_indices（组索引原地去重）
 **源端**：`moe/inplace_unique_group_indices_kernel.py` | **目标**：`moe/inplace_unique_group_indices_pto.hpp`
@@ -194,7 +194,7 @@ A=TileLeft/B=TileRight/C=TileAcc。warp spec 软流水无对应 → 显式 seria
    - `TABS` → `TMAX(TROWMAX(x), TROWMAX(TMULS(x,-1)))`
    - `TNEG` → `TMULS(x,-1)`
    - `TRSQRT` → 牛顿迭代（`TRECIP`+`TMUL`/`TMULS`/`TADDS`）
-   - `TFMA` → `TMUL`+`TADD`
+   - 加权累加 → `TMUL`+`TADD`
    - `TROWARGMAX` → `TROWMAX`+`TCMP`+逆索引`TSEL`+`TROWEXPAND`
    - `THISTOGRAM` → per-expert `TCMP`+`TSEL`+`TROWSUM`+`TINSERT` 直方图 tile
    - `TCMPS`(标量比较) → `TEXPANDS`广播+`TCMP`；`>=0` → 符号位 `TAND`+`TCMP(==0)`
