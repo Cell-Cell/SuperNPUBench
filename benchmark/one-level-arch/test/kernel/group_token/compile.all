@@ -1,0 +1,7 @@
+#!/bin/bash
+# group_token operator test cases
+# MoE token grouping: histogram + scatter
+
+: "${COMPILER_DIR:?Set COMPILER_DIR to the in-repo Linx compiler bin directory}"
+
+make TESTCASE=group_token COMPILER_DIR=$COMPILER_DIR
