@@ -1,0 +1,106 @@
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim -f /tmp/opencode/issue_pkg/moe_combine_gfsim_refmodel_acrc/elf/min_pack_twice_618blocks_CRASH.elf 
+[VRET] bid=43 cyc=368
+[VRET] bid=52 cyc=410
+[VRET] bid=40 cyc=420
+[VRET] bid=61 cyc=452
+[VRET] bid=49 cyc=463
+[VRET] bid=70 cyc=494
+[VRET] bid=58 cyc=521
+[VRET] bid=79 cyc=536
+[VRET] bid=67 cyc=567
+[VRET] bid=88 cyc=578
+[VRET] bid=76 cyc=622
+[VRET] bid=97 cyc=624
+[VRET] bid=85 cyc=645
+[VRET] bid=106 cyc=662
+[VRET] bid=94 cyc=672
+[VRET] bid=115 cyc=704
+[VRET] bid=124 cyc=746
+[VRET] bid=103 cyc=765
+[VRET] bid=133 cyc=788
+[VRET] bid=112 cyc=811
+[VRET] bid=121 cyc=815
+[VRET] bid=142 cyc=830
+[VRET] bid=130 cyc=866
+[VRET] bid=151 cyc=872
+[VRET] bid=160 cyc=914
+[VRET] bid=139 cyc=954
+[VRET] bid=148 cyc=958
+[VRET] bid=169 cyc=962
+[VRET] bid=157 cyc=1004
+[VRET] bid=166 cyc=1008
+[VRET] bid=178 cyc=1012
+[VRET] bid=187 cyc=1040
+[VRET] bid=196 cyc=1084
+[VRET] bid=175 cyc=1097
+[VRET] bid=205 cyc=1124
+[VRET] bid=214 cyc=1166
+[VRET] bid=184 cyc=1185
+[VRET] bid=193 cyc=1189
+[VRET] bid=223 cyc=1208
+[VRET] bid=202 cyc=1235
+[VRET] bid=211 cyc=1239
+[VRET] bid=232 cyc=1250
+[VRET] bid=241 cyc=1292
+[VRET] bid=220 cyc=1328
+[VRET] bid=250 cyc=1334
+[VRET] bid=3 cyc=1376
+[VRET] bid=229 cyc=1393
+[VRET] bid=238 cyc=1420
+[VRET] bid=247 cyc=1424
+[VRET] bid=12 cyc=1428
+[VRET] bid=21 cyc=1460
+[VRET] bid=0 cyc=1470
+[VRET] bid=30 cyc=1505
+[VRET] bid=9 cyc=1516
+[VRET] bid=39 cyc=1544
+[VRET] bid=48 cyc=1586
+[VRET] bid=18 cyc=1604
+[VRET] bid=57 cyc=1628
+[VRET] bid=27 cyc=1650
+[VRET] bid=66 cyc=1670
+[VRET] bid=36 cyc=1696
+[VRET] bid=45 cyc=1700
+[VRET] bid=76 cyc=1714
+[VRET] bid=54 cyc=1746
+[VRET] bid=85 cyc=1756
+[VRET] bid=63 cyc=1792
+[VRET] bid=94 cyc=1798
+[VRET] bid=103 cyc=1842
+[VRET] bid=73 cyc=1853
+[VRET] bid=82 cyc=1876
+[VRET] bid=112 cyc=1882
+[VRET] bid=91 cyc=1903
+[VRET] bid=121 cyc=1924
+[VRET] bid=100 cyc=1949
+[VRET] bid=130 cyc=1966
+[VRET] bid=109 cyc=1995
+[VRET] bid=139 cyc=2008
+[VRET] bid=148 cyc=2050
+Memory: 0x10200 - 0x10250 (Size=0KB) [.rodata]
+Memory: 0x10254 - 0x1026f (Size=0KB) [.eh_frame_hdr]
+Memory: 0x10270 - 0x102c3 (Size=0KB) [.eh_frame]
+Memory: 0x112c4 - 0x115ef (Size=0KB) [.text]
+Memory: 0x125f0 - 0x1260f (Size=0KB) [.init_array]
+Memory: 0x12610 - 0x12627 (Size=0KB) [.data.rel.ro]
+Memory: 0x14000 - 0x2685b (Size=74KB) [.bss]
+Memory: 0x26860 - 0x2687f (Size=0KB) [.sbss]
+Memory: 0x26880 - 0x8036880 (Size=131136KB) [stack mem]
+Memory: 0x4000802000 - 0x4008803000 (Size=131076KB) [map mem]
+
+At /mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/emulator/SysCall.h 294 EcallAgent:
+Bad Syscall Request: syscall(200, 0, 0, 80, 1d000, 21000, 21000);
+
+FATAL: gfsim received signal 6
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x1039dc)[0xaaaaab4139dc]
+linux-vdso.so.1(__kernel_rt_sigreturn+0x0)[0xffff81c538dc]
+/lib/aarch64-linux-gnu/libc.so.6(gsignal+0xe0)[0xffff817b3d88]
+/lib/aarch64-linux-gnu/libc.so.6(abort+0x114)[0xffff817a0aac]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x167a00)[0xaaaaab477a00]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x155208)[0xaaaaab465208]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x15a950)[0xaaaaab46a950]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x40cd94)[0xaaaaab71cd94]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x31834)[0xaaaaab341834]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0xe8)[0xffff817a0e10]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x102b10)[0xaaaaab412b10]
+timeout: the monitored command dumped core

@@ -1,0 +1,14 @@
+Bad Syscall Request: syscall(20e00, 0, 1d000, 1d000, 21000, 25000, 8);
+FATAL: gfsim received signal 6
+[C:3972   ][SPE.STAGE ]:  ROB: check retire dealloc entry 93 BPC:0x11780 TPC:0x11792 P0-L0-(B60+)-G0-T0-I93-ST0  TR123-UR0 sid:0 lsid:0 src0:0x2,src1:T#1-P(38)-not_rdy,->dst0:T<256B>-P(39) data=0x0,|B.IOT 0x2, T#1 -> T<256B> last: false rob size 127 osd size 126
+[C:3972   ][DFX.NA    ]: record model minst bid 60 tpc:0x11792 data:0x0
+[C:3972   ][SPE.STAGE ]: ==================================================
+[C:3972   ][SPE.STAGE ]: PEID:0 tid:0, size 127 osdSize 126
+[C:3972   ][SPE.STAGE ]: 	|-- BPC:0x11780 TPC:0x11792 P0-L0-(B60+)-G0-T0-I93-ST0  TR123-UR0 sid:0 lsid:0 src0:0x2,src1:T#1-P(38)-not_rdy,->dst0:T<256B>-P(39) data=0x0,|B.IOT 0x2, T#1 -> T<256B> last: false retired top:free
+--
+[C:3973   ][SPE.STAGE ]:  retire entry 97 BPC:0x11796 TPC:0x1179c P0-L0-(B61+)-G0-T0-I97-ST0  TR123-UR0 sid:0 lsid:0 src0:zero data=0x0,src1:0x100,->dst0:s2-P(69) data=0x100,|addi zero, 0x100 -> s2 last: false size 126 osd size 125
+[C:3973   ][SPE.STAGE ]:  ROB: check retire dealloc entry 94 BPC:0x11780 TPC:0x11796 P0-L0-(B60+)-G0-T0-I94-ST0  TR123-UR0 sid:0 lsid:0 |BSTOP last: true rob size 126 osd size 125
+[C:3973   ][DFX.NA    ]: record model minst bid 60 tpc:0x11796 data:0x0
+[C:3973   ][SPE.STAGE ]:  commit block60 BPC:0x11780 TPC:0x11796 P0-L0-(B60+)-G0-T0-I94-ST0  TR123-UR0 sid:0 lsid:0 |BSTOP last: true
+[C:3973   ][SPE.STAGE ]:  full block retired dealloc entry 94BPC:0x11780 TPC:0x11796 P0-L0-(B60+)-G0-T0-I94-ST0  TR123-UR0 sid:0 lsid:0 |BSTOP last: true rob size 126 osd size 125
+[C:3973   ][SPE.STAGE ]: ==================================================

@@ -1,0 +1,258 @@
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim -f /tmp/opencode/issue_pkg/moe_combine_gfsim_refmodel_acrc/elf/moe_combine_v2_0828tool.elf 
+[VRET] bid=44 cyc=409
+[VRET] bid=40 cyc=420
+[VRET] bid=54 cyc=451
+[VRET] bid=64 cyc=495
+[VRET] bid=50 cyc=502
+[VRET] bid=74 cyc=539
+[VRET] bid=60 cyc=545
+[VRET] bid=84 cyc=583
+[VRET] bid=70 cyc=603
+[VRET] bid=94 cyc=627
+[VRET] bid=80 cyc=649
+[VRET] bid=104 cyc=671
+[VRET] bid=90 cyc=704
+[VRET] bid=114 cyc=715
+[VRET] bid=100 cyc=751
+[VRET] bid=124 cyc=759
+[VRET] bid=110 cyc=782
+[VRET] bid=134 cyc=803
+[VRET] bid=120 cyc=809
+[VRET] bid=144 cyc=847
+[VRET] bid=154 cyc=891
+[VRET] bid=130 cyc=897
+[VRET] bid=140 cyc=943
+[VRET] bid=150 cyc=947
+[VRET] bid=164 cyc=951
+[VRET] bid=174 cyc=979
+[VRET] bid=160 cyc=998
+[VRET] bid=184 cyc=1023
+[VRET] bid=194 cyc=1067
+[VRET] bid=170 cyc=1086
+[VRET] bid=204 cyc=1111
+[VRET] bid=180 cyc=1132
+[VRET] bid=190 cyc=1136
+[VRET] bid=214 cyc=1155
+[VRET] bid=200 cyc=1187
+[VRET] bid=224 cyc=1199
+[VRET] bid=234 cyc=1243
+[VRET] bid=210 cyc=1275
+[VRET] bid=244 cyc=1287
+[VRET] bid=220 cyc=1298
+[VRET] bid=230 cyc=1325
+[VRET] bid=254 cyc=1331
+[VRET] bid=240 cyc=1353
+[VRET] bid=8 cyc=1375
+[VRET] bid=250 cyc=1422
+[VRET] bid=18 cyc=1423
+[VRET] bid=28 cyc=1463
+[VRET] bid=4 cyc=1510
+[VRET] bid=14 cyc=1514
+[VRET] bid=38 cyc=1518
+[VRET] bid=24 cyc=1560
+[VRET] bid=34 cyc=1564
+[VRET] bid=48 cyc=1568
+[VRET] bid=58 cyc=1595
+[VRET] bid=68 cyc=1642
+[VRET] bid=44 cyc=1653
+[VRET] bid=78 cyc=1683
+[VRET] bid=88 cyc=1730
+[VRET] bid=54 cyc=1741
+[VRET] bid=64 cyc=1746
+[VRET] bid=98 cyc=1771
+[VRET] bid=74 cyc=1791
+[VRET] bid=84 cyc=1795
+[VRET] bid=94 cyc=1884
+[VRET] bid=128 cyc=1896
+[VRET] bid=109 cyc=1969
+[VRET] bid=114 cyc=1977
+[VRET] bid=119 cyc=1985
+[VRET] bid=124 cyc=2021
+[VRET] bid=132 cyc=2025
+[VRET] bid=133 cyc=2037
+[VRET] bid=141 cyc=2041
+[VRET] bid=142 cyc=2053
+[VRET] bid=135 cyc=2082
+[VRET] bid=150 cyc=2088
+[VRET] bid=144 cyc=2100
+[VRET] bid=151 cyc=2104
+[VRET] bid=159 cyc=2115
+[VRET] bid=160 cyc=2120
+[VRET] bid=171 cyc=2122
+[VRET] bid=176 cyc=2126
+[VRET] bid=136 cyc=2131
+[VRET] bid=180 cyc=2139
+[VRET] bid=153 cyc=2149
+[VRET] bid=162 cyc=2167
+[VRET] bid=172 cyc=2169
+[VRET] bid=145 cyc=2180
+[VRET] bid=177 cyc=2184
+[VRET] bid=184 cyc=2188
+[VRET] bid=181 cyc=2196
+[VRET] bid=154 cyc=2224
+[VRET] bid=185 cyc=2232
+[VRET] bid=190 cyc=2240
+[VRET] bid=195 cyc=2264
+[VRET] bid=163 cyc=2268
+[VRET] bid=209 cyc=2281
+[VRET] bid=200 cyc=2288
+[VRET] bid=167 cyc=2312
+[VRET] bid=205 cyc=2316
+[VRET] bid=213 cyc=2339
+[VRET] bid=214 cyc=2343
+[VRET] bid=222 cyc=2381
+[VRET] bid=223 cyc=2385
+[VRET] bid=216 cyc=2398
+[VRET] bid=225 cyc=2430
+[VRET] bid=217 cyc=2442
+[VRET] bid=252 cyc=2478
+[VRET] bid=226 cyc=2486
+[VRET] bid=1 cyc=2502
+[VRET] bid=253 cyc=2522
+[VRET] bid=5 cyc=2526
+[VRET] bid=2 cyc=2546
+[VRET] bid=9 cyc=2550
+[VRET] bid=6 cyc=2570
+[VRET] bid=231 cyc=2596
+[VRET] bid=232 cyc=2608
+[VRET] bid=240 cyc=2612
+[VRET] bid=241 cyc=2624
+[VRET] bid=10 cyc=2626
+[VRET] bid=15 cyc=2630
+[VRET] bid=20 cyc=2649
+[VRET] bid=234 cyc=2653
+[VRET] bid=243 cyc=2671
+[VRET] bid=25 cyc=2675
+[VRET] bid=34 cyc=2677
+[VRET] bid=235 cyc=2697
+[VRET] bid=30 cyc=2701
+[VRET] bid=38 cyc=2724
+[VRET] bid=39 cyc=2728
+[VRET] bid=244 cyc=2741
+[VRET] bid=47 cyc=2766
+[VRET] bid=48 cyc=2770
+[VRET] bid=248 cyc=2786
+[VRET] bid=41 cyc=2787
+[VRET] bid=56 cyc=2808
+[VRET] bid=57 cyc=2812
+[VRET] bid=50 cyc=2825
+[VRET] bid=42 cyc=2831
+[VRET] bid=65 cyc=2850
+[VRET] bid=66 cyc=2854
+[VRET] bid=59 cyc=2870
+[VRET] bid=77 cyc=2871
+[VRET] bid=51 cyc=2875
+[VRET] bid=82 cyc=2887
+[VRET] bid=68 cyc=2899
+[VRET] bid=78 cyc=2915
+[VRET] bid=60 cyc=2919
+[VRET] bid=86 cyc=2923
+[VRET] bid=83 cyc=2931
+[VRET] bid=90 cyc=2935
+[VRET] bid=69 cyc=2963
+[VRET] bid=87 cyc=2967
+[VRET] bid=91 cyc=2979
+[VRET] bid=73 cyc=3007
+[VRET] bid=115 cyc=3051
+[VRET] bid=96 cyc=3097
+[VRET] bid=101 cyc=3105
+[VRET] bid=106 cyc=3113
+[VRET] bid=111 cyc=3121
+[VRET] bid=119 cyc=3200
+[VRET] bid=120 cyc=3204
+[VRET] bid=122 cyc=3251
+[VRET] bid=158 cyc=3253
+[VRET] bid=128 cyc=3273
+[VRET] bid=129 cyc=3277
+[VRET] bid=163 cyc=3281
+[VRET] bid=123 cyc=3295
+[VRET] bid=159 cyc=3299
+[VRET] bid=137 cyc=3311
+[VRET] bid=138 cyc=3315
+[VRET] bid=131 cyc=3329
+[VRET] bid=146 cyc=3332
+[VRET] bid=147 cyc=3343
+[VRET] bid=164 cyc=3347
+[VRET] bid=167 cyc=3351
+[VRET] bid=171 cyc=3355
+[VRET] bid=140 cyc=3360
+[VRET] bid=132 cyc=3373
+[VRET] bid=149 cyc=3388
+[VRET] bid=168 cyc=3395
+[VRET] bid=172 cyc=3403
+[VRET] bid=177 cyc=3411
+[VRET] bid=141 cyc=3419
+[VRET] bid=182 cyc=3427
+[VRET] bid=196 cyc=3436
+[VRET] bid=187 cyc=3443
+[VRET] bid=150 cyc=3463
+[VRET] bid=192 cyc=3467
+[VRET] bid=200 cyc=3494
+[VRET] bid=201 cyc=3498
+[VRET] bid=154 cyc=3510
+[VRET] bid=209 cyc=3536
+[VRET] bid=210 cyc=3540
+[VRET] bid=203 cyc=3553
+[VRET] bid=218 cyc=3578
+[VRET] bid=219 cyc=3582
+[VRET] bid=204 cyc=3598
+[VRET] bid=212 cyc=3599
+[VRET] bid=221 cyc=3627
+[VRET] bid=239 cyc=3633
+[VRET] bid=213 cyc=3643
+[VRET] bid=244 cyc=3657
+[VRET] bid=240 cyc=3677
+[VRET] bid=248 cyc=3681
+[VRET] bid=222 cyc=3687
+[VRET] bid=245 cyc=3701
+[VRET] bid=252 cyc=3705
+[VRET] bid=249 cyc=3725
+[VRET] bid=253 cyc=3749
+[VRET] bid=227 cyc=3805
+[VRET] bid=228 cyc=3809
+[VRET] bid=2 cyc=3821
+[VRET] bid=21 cyc=3825
+[VRET] bid=7 cyc=3829
+[VRET] bid=12 cyc=3845
+[VRET] bid=230 cyc=3854
+[VRET] bid=17 cyc=3861
+[VRET] bid=25 cyc=3879
+[VRET] bid=26 cyc=3883
+[VRET] bid=231 cyc=3898
+[VRET] bid=34 cyc=3921
+[VRET] bid=35 cyc=3925
+[VRET] bid=28 cyc=3938
+[VRET] bid=235 cyc=3942
+[VRET] bid=43 cyc=3963
+[VRET] bid=44 cyc=3967
+[VRET] bid=29 cyc=3983
+[VRET] bid=37 cyc=3984
+[VRET] bid=52 cyc=4005
+[VRET] bid=53 cyc=4009
+Memory: 0x10200 - 0x10250 (Size=0KB) [.rodata]
+Memory: 0x10254 - 0x10277 (Size=0KB) [.eh_frame_hdr]
+Memory: 0x10278 - 0x102eb (Size=0KB) [.eh_frame]
+Memory: 0x112ec - 0x118fb (Size=1KB) [.text]
+Memory: 0x12900 - 0x1291f (Size=0KB) [.init_array]
+Memory: 0x12920 - 0x12937 (Size=0KB) [.data.rel.ro]
+Memory: 0x14000 - 0x2585b (Size=70KB) [.bss]
+Memory: 0x26000 - 0x26027 (Size=0KB) [.sbss]
+Memory: 0x26030 - 0x8036030 (Size=131136KB) [stack mem]
+Memory: 0x4000802000 - 0x4008803000 (Size=131076KB) [map mem]
+
+At /mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/emulator/SysCall.h 294 EcallAgent:
+Bad Syscall Request: syscall(20e00, 0, 1d000, 1d000, 21000, 25000, 8);
+
+FATAL: gfsim received signal 6
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x1039dc)[0xaaaad63f39dc]
+linux-vdso.so.1(__kernel_rt_sigreturn+0x0)[0xffff872fa8dc]
+/lib/aarch64-linux-gnu/libc.so.6(gsignal+0xe0)[0xffff86e5ad88]
+/lib/aarch64-linux-gnu/libc.so.6(abort+0x114)[0xffff86e47aac]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x167a00)[0xaaaad6457a00]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x155208)[0xaaaad6445208]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x15a950)[0xaaaad644a950]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x40cd94)[0xaaaad66fcd94]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x31834)[0xaaaad6321834]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0xe8)[0xffff86e47e10]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x102b10)[0xaaaad63f2b10]
+timeout: the monitored command dumped core

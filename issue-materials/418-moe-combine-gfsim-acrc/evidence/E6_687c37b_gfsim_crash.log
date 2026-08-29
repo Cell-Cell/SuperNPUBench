@@ -1,0 +1,53 @@
+/tmp/opencode/ssm_new/bin/gfsim -f /tmp/opencode/issue_pkg/moe_combine_gfsim_refmodel_acrc/elf/moe_combine_v2_0828tool.elf 
+[VRET] bid=44 cyc=417
+[VRET] bid=40 cyc=423
+[VRET] bid=54 cyc=461
+[VRET] bid=64 cyc=505
+[VRET] bid=50 cyc=511
+[VRET] bid=74 cyc=549
+[VRET] bid=60 cyc=569
+[VRET] bid=84 cyc=593
+[VRET] bid=70 cyc=627
+[VRET] bid=94 cyc=637
+[VRET] bid=104 cyc=681
+[VRET] bid=80 cyc=685
+[VRET] bid=114 cyc=725
+[VRET] bid=90 cyc=743
+[VRET] bid=124 cyc=769
+[VRET] bid=100 cyc=801
+[VRET] bid=134 cyc=813
+[VRET] bid=110 cyc=859
+[VRET] bid=144 cyc=861
+[VRET] bid=154 cyc=901
+[VRET] bid=120 cyc=917
+[VRET] bid=164 cyc=945
+[VRET] bid=130 cyc=975
+[VRET] bid=174 cyc=989
+[gfsim] caught std::exception: ASSERTION FAILED: inst->srcs.size() == 2 && inst->dsts.empty() && IsLegalLocalTileDescriptor(inst->srcs[1]) && "Local TSTORE requires one legal source Tile descriptor"
+, func ValidateLocalTlsu, file /tmp/opencode/ssm_new/emulator/engine/AccumulateBlockInfo.cpp:135
+stack:
+/tmp/opencode/ssm_new/bin/gfsim(+0x17e334) [0xaaaae68fe334]
+/tmp/opencode/ssm_new/bin/gfsim(+0x18086c) [0xaaaae690086c]
+/tmp/opencode/ssm_new/bin/gfsim(+0x158608) [0xaaaae68d8608]
+/tmp/opencode/ssm_new/bin/gfsim(+0x15947c) [0xaaaae68d947c]
+/tmp/opencode/ssm_new/bin/gfsim(+0x15b1dc) [0xaaaae68db1dc]
+/tmp/opencode/ssm_new/bin/gfsim(+0x413e24) [0xaaaae6b93e24]
+/tmp/opencode/ssm_new/bin/gfsim(+0x31834) [0xaaaae67b1834]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0xe8) [0xffff9aef0e10]
+/tmp/opencode/ssm_new/bin/gfsim(+0x102b10) [0xaaaae6882b10]
+
+std::terminate called (unhandled exception or exception during unwinding)
+
+FATAL: gfsim received signal 6
+/tmp/opencode/ssm_new/bin/gfsim(+0x1039dc)[0xaaaae68839dc]
+linux-vdso.so.1(__kernel_rt_sigreturn+0x0)[0xffff9b3a38dc]
+/lib/aarch64-linux-gnu/libc.so.6(gsignal+0xe0)[0xffff9af03d88]
+/lib/aarch64-linux-gnu/libc.so.6(abort+0x114)[0xffff9aef0aac]
+/tmp/opencode/ssm_new/bin/gfsim(+0x1039a0)[0xaaaae68839a0]
+/lib/aarch64-linux-gnu/libstdc++.so.6(+0x9f20c)[0xffff9b1b320c]
+/lib/aarch64-linux-gnu/libstdc++.so.6(+0x9f270)[0xffff9b1b3270]
+/lib/aarch64-linux-gnu/libstdc++.so.6(__cxa_rethrow+0x60)[0xffff9b1b35d0]
+/tmp/opencode/ssm_new/bin/gfsim(+0x32508)[0xaaaae67b2508]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0xe8)[0xffff9aef0e10]
+/tmp/opencode/ssm_new/bin/gfsim(+0x102b10)[0xaaaae6882b10]
+timeout: the monitored command dumped core

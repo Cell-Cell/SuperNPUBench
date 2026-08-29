@@ -1,0 +1,216 @@
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim -f /tmp/opencode/issue_pkg/moe_combine_gfsim_refmodel_acrc/elf/moe_combine_orig_tmov_tcmp_0824tool.elf 
+[VRET] bid=46 cyc=412
+[VRET] bid=56 cyc=456
+[VRET] bid=66 cyc=500
+[VRET] bid=76 cyc=544
+[VRET] bid=86 cyc=588
+[VRET] bid=96 cyc=632
+[VRET] bid=106 cyc=676
+[VRET] bid=116 cyc=720
+[VRET] bid=126 cyc=764
+[VRET] bid=136 cyc=808
+[VRET] bid=146 cyc=852
+[VRET] bid=156 cyc=896
+[VRET] bid=166 cyc=940
+[VRET] bid=176 cyc=984
+[VRET] bid=186 cyc=1028
+[VRET] bid=196 cyc=1072
+[VRET] bid=206 cyc=1116
+[VRET] bid=216 cyc=1160
+[VRET] bid=226 cyc=1204
+[VRET] bid=236 cyc=1248
+[VRET] bid=246 cyc=1292
+[VRET] bid=0 cyc=1336
+[VRET] bid=10 cyc=1380
+[VRET] bid=20 cyc=1424
+[VRET] bid=30 cyc=1468
+[VRET] bid=40 cyc=1512
+[VRET] bid=50 cyc=1556
+[VRET] bid=60 cyc=1600
+[VRET] bid=70 cyc=1644
+[VRET] bid=80 cyc=1688
+[VRET] bid=90 cyc=1732
+[VRET] bid=100 cyc=1776
+[VRET] bid=110 cyc=1805
+[VRET] bid=120 cyc=1853
+[VRET] bid=130 cyc=1902
+[VRET] bid=114 cyc=1913
+[VRET] bid=140 cyc=1950
+[VRET] bid=124 cyc=1961
+[VRET] bid=150 cyc=1998
+[VRET] bid=134 cyc=2009
+[VRET] bid=144 cyc=2038
+[VRET] bid=155 cyc=2061
+[VRET] bid=157 cyc=2107
+[VRET] bid=164 cyc=2110
+[VRET] bid=173 cyc=2138
+[VRET] bid=158 cyc=2151
+[VRET] bid=166 cyc=2155
+[VRET] bid=182 cyc=2184
+[VRET] bid=175 cyc=2185
+[VRET] bid=193 cyc=2194
+[VRET] bid=167 cyc=2199
+[VRET] bid=198 cyc=2218
+[VRET] bid=184 cyc=2229
+[VRET] bid=176 cyc=2243
+[VRET] bid=203 cyc=2246
+[VRET] bid=208 cyc=2266
+[VRET] bid=185 cyc=2287
+[VRET] bid=215 cyc=2294
+[VRET] bid=189 cyc=2331
+[VRET] bid=225 cyc=2342
+[VRET] bid=219 cyc=2358
+[VRET] bid=235 cyc=2390
+[VRET] bid=229 cyc=2406
+[VRET] bid=245 cyc=2438
+[VRET] bid=255 cyc=2486
+[VRET] bid=239 cyc=2549
+[VRET] bid=249 cyc=2586
+[VRET] bid=4 cyc=2590
+[VRET] bid=13 cyc=2602
+[VRET] bid=6 cyc=2635
+[VRET] bid=15 cyc=2648
+[VRET] bid=22 cyc=2651
+[VRET] bid=7 cyc=2679
+[VRET] bid=31 cyc=2686
+[VRET] bid=42 cyc=2690
+[VRET] bid=24 cyc=2696
+[VRET] bid=47 cyc=2707
+[VRET] bid=16 cyc=2723
+[VRET] bid=33 cyc=2733
+[VRET] bid=52 cyc=2735
+[VRET] bid=57 cyc=2756
+[VRET] bid=25 cyc=2767
+[VRET] bid=64 cyc=2783
+[VRET] bid=34 cyc=2811
+[VRET] bid=74 cyc=2831
+[VRET] bid=68 cyc=2847
+[VRET] bid=38 cyc=2855
+[VRET] bid=84 cyc=2879
+[VRET] bid=78 cyc=2895
+[VRET] bid=94 cyc=2927
+[VRET] bid=88 cyc=2958
+[VRET] bid=104 cyc=2975
+[VRET] bid=98 cyc=3106
+[VRET] bid=109 cyc=3110
+[VRET] bid=118 cyc=3131
+[VRET] bid=127 cyc=3135
+[VRET] bid=111 cyc=3155
+[VRET] bid=136 cyc=3159
+[VRET] bid=120 cyc=3177
+[VRET] bid=129 cyc=3183
+[VRET] bid=147 cyc=3184
+[VRET] bid=112 cyc=3199
+[VRET] bid=138 cyc=3206
+[VRET] bid=152 cyc=3208
+[VRET] bid=157 cyc=3220
+[VRET] bid=121 cyc=3243
+[VRET] bid=162 cyc=3247
+[VRET] bid=169 cyc=3274
+[VRET] bid=130 cyc=3287
+[VRET] bid=179 cyc=3320
+[VRET] bid=139 cyc=3331
+[VRET] bid=173 cyc=3336
+[VRET] bid=189 cyc=3368
+[VRET] bid=143 cyc=3375
+[VRET] bid=183 cyc=3384
+[VRET] bid=199 cyc=3416
+[VRET] bid=193 cyc=3432
+[VRET] bid=209 cyc=3464
+[VRET] bid=203 cyc=3616
+[VRET] bid=214 cyc=3649
+[VRET] bid=223 cyc=3653
+[VRET] bid=232 cyc=3665
+[VRET] bid=241 cyc=3669
+[VRET] bid=252 cyc=3673
+[VRET] bid=216 cyc=3694
+[VRET] bid=225 cyc=3698
+[VRET] bid=234 cyc=3713
+[VRET] bid=1 cyc=3714
+[VRET] bid=6 cyc=3719
+[VRET] bid=243 cyc=3722
+[VRET] bid=11 cyc=3733
+[VRET] bid=217 cyc=3738
+[VRET] bid=18 cyc=3761
+[VRET] bid=226 cyc=3782
+[VRET] bid=28 cyc=3809
+[VRET] bid=235 cyc=3827
+[VRET] bid=22 cyc=3829
+[VRET] bid=244 cyc=3871
+[VRET] bid=32 cyc=3875
+[VRET] bid=38 cyc=3879
+[VRET] bid=48 cyc=3905
+[VRET] bid=248 cyc=3915
+[VRET] bid=42 cyc=3923
+[VRET] bid=58 cyc=3953
+[VRET] bid=52 cyc=3969
+[VRET] bid=63 cyc=4148
+[VRET] bid=101 cyc=4152
+[VRET] bid=106 cyc=4174
+[VRET] bid=65 cyc=4193
+[VRET] bid=72 cyc=4206
+[VRET] bid=81 cyc=4210
+[VRET] bid=111 cyc=4214
+[VRET] bid=90 cyc=4222
+[VRET] bid=116 cyc=4226
+[VRET] bid=66 cyc=4237
+[VRET] bid=74 cyc=4251
+[VRET] bid=83 cyc=4257
+[VRET] bid=123 cyc=4259
+[VRET] bid=92 cyc=4267
+[VRET] bid=75 cyc=4295
+[VRET] bid=133 cyc=4299
+[VRET] bid=127 cyc=4314
+[VRET] bid=84 cyc=4339
+[VRET] bid=143 cyc=4346
+[VRET] bid=137 cyc=4362
+[VRET] bid=93 cyc=4383
+[VRET] bid=153 cyc=4394
+[VRET] bid=147 cyc=4410
+[VRET] bid=97 cyc=4427
+[VRET] bid=163 cyc=4442
+[VRET] bid=157 cyc=4458
+[VRET] bid=168 cyc=4500
+[VRET] bid=170 cyc=4545
+[VRET] bid=171 cyc=4589
+[VRET] bid=206 cyc=4639
+[VRET] bid=211 cyc=4663
+[VRET] bid=216 cyc=4687
+[VRET] bid=177 cyc=4715
+[VRET] bid=186 cyc=4719
+[VRET] bid=221 cyc=4723
+[VRET] bid=195 cyc=4731
+[VRET] bid=228 cyc=4739
+[VRET] bid=179 cyc=4760
+[VRET] bid=188 cyc=4764
+[VRET] bid=197 cyc=4776
+[VRET] bid=238 cyc=4787
+[VRET] bid=180 cyc=4805
+[VRET] bid=232 cyc=4807
+Memory: 0x10200 - 0x10250 (Size=0KB) [.rodata]
+Memory: 0x10254 - 0x10277 (Size=0KB) [.eh_frame_hdr]
+Memory: 0x10278 - 0x102e3 (Size=0KB) [.eh_frame]
+Memory: 0x112e4 - 0x118a9 (Size=1KB) [.text]
+Memory: 0x128b0 - 0x128cf (Size=0KB) [.init_array]
+Memory: 0x128d0 - 0x128e7 (Size=0KB) [.data.rel.ro]
+Memory: 0x14000 - 0x2685b (Size=74KB) [.bss]
+Memory: 0x26860 - 0x2687f (Size=0KB) [.sbss]
+Memory: 0x26880 - 0x8036880 (Size=131136KB) [stack mem]
+Memory: 0x4000802000 - 0x4008803000 (Size=131076KB) [map mem]
+
+At /mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/emulator/SysCall.h 294 EcallAgent:
+Bad Syscall Request: syscall(80, 0, 1d000, 1d000, 26000, 26000, 21000);
+
+FATAL: gfsim received signal 6
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x1039dc)[0xaaaac2f839dc]
+linux-vdso.so.1(__kernel_rt_sigreturn+0x0)[0xffff991cf8dc]
+/lib/aarch64-linux-gnu/libc.so.6(gsignal+0xe0)[0xffff98d2fd88]
+/lib/aarch64-linux-gnu/libc.so.6(abort+0x114)[0xffff98d1caac]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x167a00)[0xaaaac2fe7a00]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x155208)[0xaaaac2fd5208]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x15a950)[0xaaaac2fda950]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x40cd94)[0xaaaac328cd94]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x31834)[0xaaaac2eb1834]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0xe8)[0xffff98d1ce10]
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0828/SuperScalarModel/bin/gfsim(+0x102b10)[0xaaaac2f82b10]
+timeout: the monitored command dumped core

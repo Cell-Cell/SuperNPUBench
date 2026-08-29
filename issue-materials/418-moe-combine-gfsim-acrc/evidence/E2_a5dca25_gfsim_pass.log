@@ -1,0 +1,652 @@
+/mnt/workspace/gitCode/cann/Dev-experience/v300_tag_0824/SuperScalarModel/bin/gfsim -f /tmp/opencode/issue_pkg/moe_combine_gfsim_refmodel_acrc/elf/moe_combine_v2_0828tool.elf 
+[VRET] bid=44 cyc=409
+[VRET] bid=40 cyc=420
+[VRET] bid=54 cyc=451
+[VRET] bid=64 cyc=495
+[VRET] bid=50 cyc=502
+[VRET] bid=74 cyc=539
+[VRET] bid=60 cyc=545
+[VRET] bid=84 cyc=583
+[VRET] bid=70 cyc=603
+[VRET] bid=94 cyc=627
+[VRET] bid=80 cyc=649
+[VRET] bid=104 cyc=671
+[VRET] bid=90 cyc=704
+[VRET] bid=114 cyc=715
+[VRET] bid=100 cyc=751
+[VRET] bid=124 cyc=759
+[VRET] bid=110 cyc=782
+[VRET] bid=134 cyc=803
+[VRET] bid=120 cyc=809
+[VRET] bid=144 cyc=847
+[VRET] bid=154 cyc=891
+[VRET] bid=130 cyc=897
+[VRET] bid=140 cyc=943
+[VRET] bid=150 cyc=947
+[VRET] bid=164 cyc=951
+[VRET] bid=174 cyc=979
+[VRET] bid=160 cyc=998
+[VRET] bid=184 cyc=1023
+[VRET] bid=194 cyc=1067
+[VRET] bid=170 cyc=1086
+[VRET] bid=204 cyc=1111
+[VRET] bid=180 cyc=1132
+[VRET] bid=190 cyc=1136
+[VRET] bid=214 cyc=1155
+[VRET] bid=200 cyc=1187
+[VRET] bid=224 cyc=1199
+[VRET] bid=234 cyc=1243
+[VRET] bid=210 cyc=1275
+[VRET] bid=244 cyc=1287
+[VRET] bid=220 cyc=1298
+[VRET] bid=230 cyc=1325
+[VRET] bid=254 cyc=1331
+[VRET] bid=240 cyc=1353
+[VRET] bid=8 cyc=1375
+[VRET] bid=250 cyc=1422
+[VRET] bid=18 cyc=1423
+[VRET] bid=28 cyc=1463
+[VRET] bid=4 cyc=1510
+[VRET] bid=14 cyc=1514
+[VRET] bid=38 cyc=1518
+[VRET] bid=24 cyc=1560
+[VRET] bid=34 cyc=1564
+[VRET] bid=48 cyc=1568
+[VRET] bid=58 cyc=1595
+[VRET] bid=68 cyc=1642
+[VRET] bid=44 cyc=1653
+[VRET] bid=78 cyc=1683
+[VRET] bid=88 cyc=1730
+[VRET] bid=54 cyc=1741
+[VRET] bid=64 cyc=1746
+[VRET] bid=98 cyc=1771
+[VRET] bid=74 cyc=1791
+[VRET] bid=84 cyc=1795
+[VRET] bid=94 cyc=1884
+[VRET] bid=128 cyc=1896
+[VRET] bid=109 cyc=1969
+[VRET] bid=114 cyc=1977
+[VRET] bid=119 cyc=1985
+[VRET] bid=124 cyc=2021
+[VRET] bid=132 cyc=2025
+[VRET] bid=133 cyc=2037
+[VRET] bid=141 cyc=2041
+[VRET] bid=142 cyc=2053
+[VRET] bid=135 cyc=2082
+[VRET] bid=150 cyc=2088
+[VRET] bid=144 cyc=2100
+[VRET] bid=151 cyc=2104
+[VRET] bid=159 cyc=2115
+[VRET] bid=160 cyc=2120
+[VRET] bid=171 cyc=2122
+[VRET] bid=176 cyc=2126
+[VRET] bid=136 cyc=2131
+[VRET] bid=180 cyc=2139
+[VRET] bid=153 cyc=2149
+[VRET] bid=162 cyc=2167
+[VRET] bid=172 cyc=2169
+[VRET] bid=145 cyc=2180
+[VRET] bid=177 cyc=2184
+[VRET] bid=184 cyc=2188
+[VRET] bid=181 cyc=2196
+[VRET] bid=154 cyc=2224
+[VRET] bid=185 cyc=2232
+[VRET] bid=190 cyc=2240
+[VRET] bid=195 cyc=2264
+[VRET] bid=163 cyc=2268
+[VRET] bid=209 cyc=2281
+[VRET] bid=200 cyc=2288
+[VRET] bid=167 cyc=2312
+[VRET] bid=205 cyc=2316
+[VRET] bid=213 cyc=2339
+[VRET] bid=214 cyc=2343
+[VRET] bid=222 cyc=2381
+[VRET] bid=223 cyc=2385
+[VRET] bid=216 cyc=2398
+[VRET] bid=225 cyc=2430
+[VRET] bid=217 cyc=2442
+[VRET] bid=252 cyc=2478
+[VRET] bid=226 cyc=2486
+[VRET] bid=1 cyc=2502
+[VRET] bid=253 cyc=2522
+[VRET] bid=5 cyc=2526
+[VRET] bid=2 cyc=2546
+[VRET] bid=9 cyc=2550
+[VRET] bid=6 cyc=2570
+[VRET] bid=231 cyc=2596
+[VRET] bid=232 cyc=2608
+[VRET] bid=240 cyc=2612
+[VRET] bid=241 cyc=2624
+[VRET] bid=10 cyc=2626
+[VRET] bid=15 cyc=2630
+[VRET] bid=20 cyc=2649
+[VRET] bid=234 cyc=2653
+[VRET] bid=243 cyc=2671
+[VRET] bid=25 cyc=2675
+[VRET] bid=34 cyc=2677
+[VRET] bid=235 cyc=2697
+[VRET] bid=30 cyc=2701
+[VRET] bid=38 cyc=2724
+[VRET] bid=39 cyc=2728
+[VRET] bid=244 cyc=2741
+[VRET] bid=47 cyc=2766
+[VRET] bid=48 cyc=2770
+[VRET] bid=248 cyc=2786
+[VRET] bid=41 cyc=2787
+[VRET] bid=56 cyc=2808
+[VRET] bid=57 cyc=2812
+[VRET] bid=50 cyc=2825
+[VRET] bid=42 cyc=2831
+[VRET] bid=65 cyc=2850
+[VRET] bid=66 cyc=2854
+[VRET] bid=59 cyc=2870
+[VRET] bid=77 cyc=2871
+[VRET] bid=51 cyc=2875
+[VRET] bid=82 cyc=2887
+[VRET] bid=68 cyc=2899
+[VRET] bid=78 cyc=2915
+[VRET] bid=60 cyc=2919
+[VRET] bid=86 cyc=2923
+[VRET] bid=83 cyc=2931
+[VRET] bid=90 cyc=2935
+[VRET] bid=69 cyc=2963
+[VRET] bid=87 cyc=2967
+[VRET] bid=91 cyc=2979
+[VRET] bid=73 cyc=3007
+[VRET] bid=115 cyc=3051
+[VRET] bid=96 cyc=3097
+[VRET] bid=101 cyc=3105
+[VRET] bid=106 cyc=3113
+[VRET] bid=111 cyc=3121
+[VRET] bid=119 cyc=3200
+[VRET] bid=120 cyc=3204
+[VRET] bid=122 cyc=3251
+[VRET] bid=158 cyc=3253
+[VRET] bid=128 cyc=3273
+[VRET] bid=129 cyc=3277
+[VRET] bid=163 cyc=3281
+[VRET] bid=123 cyc=3295
+[VRET] bid=159 cyc=3299
+[VRET] bid=137 cyc=3311
+[VRET] bid=138 cyc=3315
+[VRET] bid=131 cyc=3329
+[VRET] bid=146 cyc=3332
+[VRET] bid=147 cyc=3343
+[VRET] bid=164 cyc=3347
+[VRET] bid=167 cyc=3351
+[VRET] bid=171 cyc=3355
+[VRET] bid=140 cyc=3360
+[VRET] bid=132 cyc=3373
+[VRET] bid=149 cyc=3388
+[VRET] bid=168 cyc=3395
+[VRET] bid=172 cyc=3403
+[VRET] bid=177 cyc=3411
+[VRET] bid=141 cyc=3419
+[VRET] bid=182 cyc=3427
+[VRET] bid=196 cyc=3436
+[VRET] bid=187 cyc=3443
+[VRET] bid=150 cyc=3463
+[VRET] bid=192 cyc=3467
+[VRET] bid=200 cyc=3494
+[VRET] bid=201 cyc=3498
+[VRET] bid=154 cyc=3510
+[VRET] bid=209 cyc=3536
+[VRET] bid=210 cyc=3540
+[VRET] bid=203 cyc=3553
+[VRET] bid=218 cyc=3578
+[VRET] bid=219 cyc=3582
+[VRET] bid=204 cyc=3598
+[VRET] bid=212 cyc=3599
+[VRET] bid=221 cyc=3627
+[VRET] bid=239 cyc=3633
+[VRET] bid=213 cyc=3643
+[VRET] bid=244 cyc=3657
+[VRET] bid=240 cyc=3677
+[VRET] bid=248 cyc=3681
+[VRET] bid=222 cyc=3687
+[VRET] bid=245 cyc=3701
+[VRET] bid=252 cyc=3705
+[VRET] bid=249 cyc=3725
+[VRET] bid=253 cyc=3749
+[VRET] bid=227 cyc=3805
+[VRET] bid=228 cyc=3809
+[VRET] bid=2 cyc=3821
+[VRET] bid=21 cyc=3825
+[VRET] bid=7 cyc=3829
+[VRET] bid=12 cyc=3845
+[VRET] bid=230 cyc=3854
+[VRET] bid=17 cyc=3861
+[VRET] bid=25 cyc=3879
+[VRET] bid=26 cyc=3883
+[VRET] bid=231 cyc=3898
+[VRET] bid=34 cyc=3921
+[VRET] bid=35 cyc=3925
+[VRET] bid=28 cyc=3938
+[VRET] bid=235 cyc=3942
+[VRET] bid=43 cyc=3963
+[VRET] bid=44 cyc=3967
+[VRET] bid=29 cyc=3983
+[VRET] bid=37 cyc=3984
+[VRET] bid=52 cyc=4005
+[VRET] bid=53 cyc=4009
+[VRET] bid=46 cyc=4025
+[VRET] bid=64 cyc=4026
+[VRET] bid=38 cyc=4030
+[VRET] bid=69 cyc=4042
+[VRET] bid=55 cyc=4054
+[VRET] bid=65 cyc=4070
+[VRET] bid=47 cyc=4074
+[VRET] bid=73 cyc=4078
+[VRET] bid=70 cyc=4086
+[VRET] bid=77 cyc=4090
+[VRET] bid=56 cyc=4118
+[VRET] bid=74 cyc=4122
+[VRET] bid=78 cyc=4134
+[VRET] bid=60 cyc=4162
+[VRET] bid=102 cyc=4206
+[VRET] bid=83 cyc=4253
+[VRET] bid=88 cyc=4261
+[VRET] bid=93 cyc=4269
+[VRET] bid=98 cyc=4277
+[VRET] bid=106 cyc=4356
+[VRET] bid=107 cyc=4360
+[VRET] bid=109 cyc=4407
+[VRET] bid=145 cyc=4408
+[VRET] bid=115 cyc=4429
+[VRET] bid=116 cyc=4433
+[VRET] bid=150 cyc=4437
+[VRET] bid=110 cyc=4451
+[VRET] bid=146 cyc=4455
+[VRET] bid=124 cyc=4467
+[VRET] bid=125 cyc=4471
+[VRET] bid=118 cyc=4485
+[VRET] bid=133 cyc=4488
+[VRET] bid=134 cyc=4499
+[VRET] bid=151 cyc=4503
+[VRET] bid=154 cyc=4507
+[VRET] bid=158 cyc=4511
+[VRET] bid=127 cyc=4516
+[VRET] bid=119 cyc=4529
+[VRET] bid=136 cyc=4544
+[VRET] bid=155 cyc=4557
+[VRET] bid=159 cyc=4564
+[VRET] bid=164 cyc=4566
+[VRET] bid=128 cyc=4575
+[VRET] bid=169 cyc=4582
+[VRET] bid=183 cyc=4591
+[VRET] bid=174 cyc=4598
+[VRET] bid=137 cyc=4619
+[VRET] bid=179 cyc=4623
+[VRET] bid=187 cyc=4649
+[VRET] bid=188 cyc=4653
+[VRET] bid=141 cyc=4665
+[VRET] bid=196 cyc=4691
+[VRET] bid=197 cyc=4695
+[VRET] bid=190 cyc=4708
+[VRET] bid=205 cyc=4733
+[VRET] bid=206 cyc=4737
+[VRET] bid=191 cyc=4753
+[VRET] bid=199 cyc=4754
+[VRET] bid=208 cyc=4782
+[VRET] bid=226 cyc=4788
+[VRET] bid=200 cyc=4798
+[VRET] bid=231 cyc=4812
+[VRET] bid=227 cyc=4832
+[VRET] bid=235 cyc=4836
+[VRET] bid=209 cyc=4842
+[VRET] bid=232 cyc=4856
+[VRET] bid=239 cyc=4860
+[VRET] bid=236 cyc=4880
+[VRET] bid=240 cyc=4904
+[VRET] bid=214 cyc=4944
+[VRET] bid=215 cyc=4948
+[VRET] bid=217 cyc=4993
+[VRET] bid=218 cyc=5037
+[VRET] bid=222 cyc=5081
+Memory: 0x10200 - 0x10250 (Size=0KB) [.rodata]
+Memory: 0x10254 - 0x10277 (Size=0KB) [.eh_frame_hdr]
+Memory: 0x10278 - 0x102eb (Size=0KB) [.eh_frame]
+Memory: 0x112ec - 0x118fb (Size=1KB) [.text]
+Memory: 0x12900 - 0x1291f (Size=0KB) [.init_array]
+Memory: 0x12920 - 0x12937 (Size=0KB) [.data.rel.ro]
+Memory: 0x14000 - 0x2585b (Size=70KB) [.bss]
+Memory: 0x26000 - 0x26027 (Size=0KB) [.sbss]
+Memory: 0x26030 - 0x8036030 (Size=131136KB) [stack mem]
+Memory: 0x4000802000 - 0x4008803000 (Size=131076KB) [map mem]
+Simulation time: 1s 
++-------------------------+--------------+
+| BCC Config Name         | Value        |
++-------------------------+--------------+
+| inst_decode_bw          | 4            |
+| block_rob_depth         | 256          |
+| BISQ:cube_isq_depth     | 32           |
+| BISQ:vector_isq_depth   | 64           |
++-------------------------+--------------+
+No configuration items found.
++-------------------+--------------+
+| CUBE Config Name  | Value        |
++-------------------+--------------+
+| uop_isq_depth     | 32           |
+| tcvt_isq_depth    | 32           |
+| L0A_size          | 64           |
+| L0B_size          | 64           |
+| L0C_size          | 64           |
++-------------------+--------------+
+No configuration items found.
+No configuration items found.
+===================SuperScalar NPU Stats====================
+Total Cycles.....................................:      5205
+Sim Total Cycles.................................:      5205
+================SuperScalar Unified Top-Down================
+Retiring.........................................:     30.85%
+Bad Speculation..................................:     21.88%
+Frontend Bound...................................:      0.88%
+Backend Bound....................................:     46.38%
+  |-- LD Retiring................................:      1.24%
+  |-- ST Retiring................................:      1.31%
+  |-- BR Retiring................................:      0.00%
+  |-- ALU Retiring...............................:     28.30%
+  |-- Other Retiring.............................:      0.00%
+  |-- Misprediction..............................:      0.12%
+  |-- Machine Clear..............................:     21.76%
+  |-- Fetch Latency..............................:      0.00%
+  |-- Fetch Bandwidth............................:      0.00%
+    |-- Branch Resteering........................:      0.61%
+    |-- ITLB/BTLB miss...........................:      0.00%
+    |-- BHC miss penalty.........................:   2718.96%
+    |-- Other fetch lat..........................:      0.00%
+    |-- Decode Stall.............................:      0.00%
+    |-- Rename Stall.............................:      0.00%
+    |-- BROB Stall...............................:      1.15%
+    |-- SYS Block Stall..........................:      0.00%
+  |-- Memory Bound...............................:      0.00%
+  |-- Core Bound.................................:     46.38%
+    |-- L1 Bound.................................:      0.00%
+    |-- L2 Bound.................................:      0.00%
+    |-- L3/DRAM Bound............................:      0.00%
+    |-- Store Bound..............................:      0.00%
+    |-- Scalar ALU...............................:    266.76%
+    |-- Cube.....................................:     25.00%
+    |-- Vector...................................:      0.00%
+    |-- TLSU Tload...............................:      0.00%
+    |-- TLSU Tstore..............................:      0.00%
+    |-- TLSU TMOV................................:      0.00%
+    |-- Idle.....................................:      0.00%
+    |-- Other Core...............................:      0.00%
+      |-- Simple ALU pipe full...................:      0.00%
+      |-- Complex INT busy.......................:      0.38%
+      |-- Branch port busy.......................:      1.73%
+===================superScalar Key Stats====================
+superScalar Tileop Total Cycles..................:      5205
+  |--Cube Tileop Total Cycles....................:         0
+  |--Vector Tileop Total Cycles..................:      2230
+  |--TMA Tileop Total Cycles.....................:      2967
+superScalar Total Tileop Counter.................:       568
+  |--Cube Execute Tileop Counter.................:         0
+  |--Vector Execute Tileop Counter...............:       304
+  |--TMA Execute Tileop Counter..................:       264
+superScalar Run Tileop Total Cycles..............:      4284
+  |--Cube Busy Cycles............................:         0
+  |--Vector Busy Cycles..........................:     12318
+  |--TMA Busy Cycles.............................:         0
+    |--Tload Busy Cycles.........................:         0
+      |--write Blocked By Ring Cycles............:         0
+    |--Tstore Busy Cycles........................:         0
+    |--Tmov Busy Cycles..........................:         0
+    |--Mgather Busy Cycles.......................:         0
+    |--Mscatter Busy Cycles......................:         0
+    |--Vgather Busy Cycles.......................:         0
+    |--Vscatter Busy Cycles......................:         0
+  |--All Cores Idle Cycles.......................:       921
+  |--Vector-Cube Cocurrent Cycles................:         0
+  |--Vector-Cube Active Cycles...................:      4284
+  |--Cube-TMA Cocurrent Cycles...................:         0
+  |--Cube-TMA Active Cycles......................:         0
+  |--Vector-TMA Cocurrent Cycles.................:         0
+  |--Vector-TMA Active Cycles....................:      4284
+===============PROB Status Occupancy (cycles)===============
+  |--free........................................:         0
+  |--alloc.......................................:    423989
+  |--renamed.....................................:        20
+  |--dispatched..................................:      2052
+  |--in_queue....................................:     13121
+  |--issued......................................:     16111
+  |--executing...................................:      6004
+  |--writeback...................................:      1210
+  |--completed...................................:    112447
+  |--retired.....................................:     10452
+  |--fault.......................................:         0
+  |--need_flush..................................:         0
+====================BCC Key Stats total=====================
+Average Outstanding Block Number.................:      8.32
+  |--Average Outstanding Cube Block Number.......:      0.00
+  |--Average Outstanding Vector Block Number.....:      2.54
+  |--Average Outstanding TLoad Number............:      1.52
+  |--Average Outstanding TStore Number...........:      4.25
+==================BCC Key Stats SThread 0===================
+Average Outstanding Block Number.................:      8.32
+  |--Average Outstanding Cube Block Number.......:      0.00
+  |--Average Outstanding Vector Block Number.....:      2.54
+  |--Average Outstanding TLoad Number............:      1.52
+  |--Average Outstanding TStore Number...........:      4.25
+===================CubeCore 0 Statistics====================
+Cube core TFLOPS(1.65GHz)........................:      0.00
+Cube core alu utilization........................:         0    0.00%
+Cube core utilization(Run TileOp, header)........:         0    0.00%
+Cube core L0CWR ratio............................:         0    inf%
+Cube core load wait ratio........................:         0    inf%
+Cube core load port data channel utilization.....:         0    inf%
+Cube core uop load average used cycle............:       nan
+Cube core load req average used cycle............:       nan
+Cube core exe tileop count.......................:         0
+Cube core average acc slot use...................:       nan
+Cube core average l0a entry use..................:       nan
+Cube core average l0b entry use..................:       nan
+Cube core average l0a entry use busy.............:       nan
+Cube core average l0b entry use busy.............:       nan
+Cube core average acc slot use busy..............:       nan
+Cube core exe uop count..........................:         0
+Cube core total load count.......................:         0
+Cube core total store count......................:         0
+Cube core cannot pick main chain uop ratio.......:         0    inf%
+Cube core pick cub chain uop ratio...............:         0    inf%
+Cube busy cycle..................................:         0
+Cube core mmad busy cycle........................:         0    inf%
+Cube core load busy cycle........................:         0    inf%
+Cube core store busy cycle.......................:         0    inf%
+Cube core tileop mmad cycle range................:         0
+Cube core tileop load cycle range................:         0
+Cube core tileop store cycle range...............:         0
+Cube core load and mmad cycle overlap............:         0    inf%
+=============== TLSU tile-store STQ residency peId=0 ===============
+  resident entry-cycles ....................: 19166
+  |-- addr/interval not resolved ...........: 0  (0.00%)
+  |-- tile data (rename) not ready .........: 8228  (42.93%)
+  |-- BLOCKED BY NON-FLUSH POINTER .........: 10801  (56.36%)
+  |-- older store still in STQ .............: 1  (0.01%)
+  |-- SCB full ............................: 0  (0.00%)
+  store_issue=409 scb_enter=409 stq_peak=21 scb_peak=11
+  invariants: stq_conservation=OK (created=273 destroyed=273) a3_tile_violation=0 scb_flush_hit=0 scb_waw_scalar=0 scb_waw_tile=0 nuke=0
+=====================Retired block Type=====================
+Retired Block Num................................:      1014
+  |--Retired STD Block Num.......................:       446
+  |--Retired PARALLEL Block Num..................:       568
+    |--Retired CUBE Block Num....................:         0    0.00%
+    |--Retired VCALL Block Num...................:       304   53.52%
+    |--Retired TMA Block Num.....................:       264   46.48%
+  |--Retired SYS Block Num.......................:         0
+  |--Retired FP Block Num........................:         0
+  |--Retired TEMPLATE Block Num..................:         0
+    |--MEMSET TEMPLATE Block Num.................:         0
+    |--MEMCOPY TEMPLATE Block Num................:         0
+    |--FENTRY TEMPLATE Block Num.................:         2
+    |--FEXIT TEMPLATE Block Num..................:         0
+    |--FRET TEMPLATE Block Num...................:         2
+  |--Retired OTHER Block Num.....................:         0
+Retired Inst Number..............................:         0
+  |--Retired Cube Inst Number....................:         0
+  |--Retired Vec Inst Number.....................:         0
+BPC..............................................:      0.19
+IPC..............................................:      0.00
+Average BROB depth...............................:    142.53
+Effective window size............................:     76.61
+MPKB.............................................:     24.95
+MPKI.............................................:       nan
+Simulation speed (Kilo Insts Per Second).........:      0.00
+Discontinuous BPC Count..........................:        97
+Average Continuous BPC Length....................:     10.45
+Average fetch minsts/header per cycle............:     23.03
+===============BCC Detail Stats(Tile rename)================
+Tile register average tag num....................:     55.03
+  |--T...........................................:     23.46
+  |--U...........................................:     22.53
+  |--M...........................................:      9.04
+  |--N...........................................:      0.00
+  |--ACC.........................................:      0.00
+  |--STK.........................................:      0.00
+  |--DEP.........................................:      0.00
+  |--MCALL_GPR...................................:      0.00
+  |--MCALL_STK...................................:      0.00
+Tile register average utilization(B).............: 140377.52
+  |--T...........................................:     40909   29.14%
+  |--U...........................................:     62427   44.47%
+  |--M...........................................:     37040   26.39%
+  |--N...........................................:         0    0.00%
+  |--ACC.........................................:         0    0.00%
+  |--STK.........................................:         0    0.00%
+  |--DEP.........................................:         0    0.00%
+  |--MCALL_GPR...................................:         0    0.00%
+  |--MCALL_STK...................................:         0    0.00%
+Tile register max size of T......................:    655360
+  |-- utilization................................:     73728   11.25%
+Tile register max size of U......................:    655360
+  |-- utilization................................:    114688   17.50%
+Tile register max size of M......................:    655360
+  |-- utilization................................:     81920   12.50%
+Tile register max size of N......................:    655360
+  |-- utilization................................:         0    0.00%
+T MAPQ average occupied size.....................:      0.00
+U MAPQ average occupied size.....................:      0.00
+M MAPQ average occupied size.....................:      0.00
+N MAPQ average occupied size.....................:      0.00
+ACC MAPQ average occupied size...................:      0.00
+STK MAPQ average occupied size...................:      0.00
+DEP MAPQ average occupied size...................:      0.00
+MCALL_GPR MAPQ average occupied size.............:      0.00
+MCALL_STK MAPQ average occupied size.............:      0.00
+===================BCC Stall Stats Total====================
+BRob Full Stall..................................:       239
+RENAME Stall.....................................:         0
+Block Rename Get Stall...........................:         0
+Block Rename Set Stall...........................:         0
+BIsq Full Stall .................................:         0
+TileReg Full Stall ..............................:         0
+=================BCC Stall Stats SThread 0==================
+BRob Full Stall..................................:       239
+RENAME Stall.....................................:         0
+Block Rename Get Stall...........................:         0
+Block Rename Set Stall...........................:         0
+BIsq Full Stall .................................:         0
+TileReg Full Stall ..............................:         0
+==========BCC Detail Stats(Flush Statistics) Total==========
+intra-block ld-st conflict.......................:         0
+inter-block ld-st conflict.......................:         0
+intra-block misp.................................:         0
+inter-block misp.................................:        32
+========BCC Detail Stats(Flush Statistics) SThread 0========
+intra-block ld-st conflict.......................:         0
+inter-block ld-st conflict.......................:         0
+intra-block misp.................................:         0
+inter-block misp.................................:        32
+=====================SPE OOO&IEX stats======================
+decode inst bubble...............................:     12342
+average decode bundle............................:      0.00
+Thread0 Pick Cnt.................................:      6934
+Thread1 Pick Cnt.................................:         0
+Thread2 Pick Cnt.................................:         0
+Thread3 Pick Cnt.................................:         0
+Thread0 rob stall cnt............................:      2899
+Thread1 rob stall cnt............................:         0
+Thread2 rob stall cnt............................:         0
+Thread3 rob stall cnt............................:         0
+decode pe rob stall..............................:         0
+decode local gpr stall...........................:         0
+inst buffer stall................................:         0
+predicate reg stall..............................:         0
+vector reg ptag stall............................:         0
+vector local scalar reg stall....................:         0
+retired ld inst..................................:       258
+retired st inst..................................:       273
+retired scalar inst..............................:      6424
+retired vector inst..............................:         0
+retired div/sqrt inst............................:         0
+MAPQ lg0 stall...................................:         0
+ROB lg0 stall....................................:      2899
+Thread0 decode cycle.............................:      1736
+Thread0 alloc cycle..............................:      1736
+Thread0 rename cycle.............................:      1728
+Thread0 d2_s1 dispatch cnt.......................:      1769
+Thread0 slots_total..............................:      6944
+Thread0 slots_rob_allocated......................:      6934
+Thread0 slots_fe_bubble..........................:        10
+Thread0 slots_idle...............................:         0
+Thread0 robStall.................................:     11596
+Thread0 retired_load.............................:       258
+Thread0 retired_store............................:       273
+Thread0 retired_innerJump........................:         0
+Thread0 retiredAluInst...........................:      5893
+Thread0 retiredSAluInst..........................:      5893
+Thread0 retiredVAluInst..........................:         0
+Thread0 retiredScalar............................:      6424
+Thread0 retiredVector............................:         0
+Thread0 retiredDivSqrt...........................:         0
+======================Vector PMU Stats======================
+TileopNum........................................:       304
+UopNum...........................................:      1216
+IPC(UOP).........................................:  0.233622
+RowExpandTileNum.................................:         0
+RowExpandUopSplit................................:         0
+RowExpandSrc0CellRegReadNum......................:         0
+RowExpandBroadcastCellRegReadNum.................:         0
+RowExpandBroadcastBufferHitNum...................:         0
+RowExpandBroadcastOwnerDeliveryNum...............:         0
+RowExpandBroadcastCacheFillNum...................:         0
+RowExpandBroadcastWaitCycles.....................:         0
+RowExpandReadPortWaitCycles......................:         0
+RowExpandSourceResponseWaitUopCycles.............:         0
+RowExpandCompletedTileNum........................:         0
+RowExpandFlushedTileNum..........................:         0
+RowExpandStaleResponseNum........................:         0
+RowReduceTileNum.................................:         0
+RowReduceLayerNum................................:         0
+RowReduceUopSplit................................:         0
+RowReduceUopDone.................................:         0
+RowReduceRootWriteNum............................:         0
+RowReduceFlushedTileNum..........................:         0
+RowReduceEntryUnavailableCycles..................:         0
+RowReduceSplitBandwidthWaitTileCycles............:         0
+RowReduceSrcBufFullTileCycles....................:         0
+RowReduceLayerWaitTileCycles.....................:         0
+RowReduceLayerPublishWaitTileCycles..............:         0
+RowReduceReadPortWaitUopCycles...................:         0
+RowReduceSourceResponseWaitUopCycles.............:         0
+RowReduceIssueIntervalWaitUopCycles..............:         0
+RowReduceSameGroupWaitUopCycles..................:         0
+RowReduceExecPipeFullUopCycles...................:         0
+RowReduceRootDstBufWaitTileCycles................:         0
+RowReduceRootWritePortWaitCycles.................:         0
+RowReduceRootWriteResponseWaitCycles.............:         0
+RowReduceCellBufPeak.............................:         0
+ReadNum..........................................:       928
+ReadLat..........................................:     14.00
+  |--LatLE5......................................:         0
+  |--LatLE10.....................................:         0
+  |--LatLE15.....................................:       928
+  |--LatGT15.....................................:         0
+WriteNum.........................................:      1216
+WriteLat.........................................:     14.00
+  |--LatLE5......................................:         0
+  |--LatLE10.....................................:         0
+  |--LatLE15.....................................:      1216
+  |--LatGT15.....................................:         0
+==================SuperScalar Report Stop===================
